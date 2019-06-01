@@ -1,7 +1,7 @@
 # fortsaet
 HR hiring tool to provide insight in to potential employees.
 
-![Screenshot Name](images/fortsaet.png)
+![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/fortsaet.PNG?raw=true)
 
 # scope 
 1. cv page (user data)... submit + enter
