@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>IBM Streams REST API CORS Sample</title>
+    <script type="text/javascript">   
+      function callRestApi() {
+        // Clear result fields
+        document.getElementById("status").innerHTML = '';
+        document.getElementById('result').children[0].innerHTML = '';
+        // Retrieve input values
+        var url = document.getElementById('uri').value;
+        var user = document.getElementById('user').value;
+        var password = document.getElementById('password').value;
+        // Set up to make cross-origin request
+        var xhr = new XMLHttpRequest();
+        xhr.withCrendentials = true;  // This must be true for Streams authentication
+        xhr.open('GET', url);
+        xhr.setRequestHeader('Authorization','Basic ' + btoa(user + ':' + password));
+        // Cross-origin request success handler
+        xhr.onload = function() {
+          if (xhr.status == 200) {  // REST API call successful, show results
+            var jsonObj = JSON.parse(xhr.responseText);
+            document.getElementById('result').children[0].innerHTML = JSON.stringify(jsonObj,null,2);
+          }
+          else {  // REST API call failed, show HTTP status code
+            document.getElementById("status").innerHTML = 'HTTP Request failed. Status code: ' + xhr.status;
+          }
+        };
+        // Cross-origin request failure handler
+        xhr.onerror = function() {
+          document.getElementById("status").innerHTML = 'Cross origin request failed. Verify the server certificate is trusted by the browser' +
+                                                        ' and <code>streamtool addtrustedorigin</code> was called to trust the origin.';
+        };
+        // Make cross-origin request
+        xhr.send();
+      }
+      function checkForEnter(e) {
+        if (e.keyCode == 13) {  // Make REST call if press enter in URI input field.
+          callRestApi();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>IBM Streams REST API CORS Sample</h1><br>
+    <label>User:</label><input id="user" name="user" size="20" value="myusername" />
+    <label>Password:</label><input id="password" name="password" type="password" size="20" value="mypassword" /><br><br>
+    <label>REST URI:</label>
+    <input id="uri" name="uri" size="100" onkeypress="checkForEnter(event)" value="https://myserver.com:8443/streams/rest/resources" />
+    <button id="callrest" onclick="callRestApi()">Call the REST API</button>
+    <pre id="result"><code></code></pre>
+    <p id="status"></p>
+  </body>
+</html>
