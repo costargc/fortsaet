@@ -1,7 +1,7 @@
 body{
     height: 4200px;
     font-family: 'Lato', sans-serif;
-    overflow-x: hidden;
+
 }
 
 /* START START START home page - navbar */
@@ -71,7 +71,6 @@ body{
     height: 500px;
     background-color: rgb(115, 210, 254,1); /* For browsers that do not support gradients */
     background-image: linear-gradient(90deg,rgb(112, 254, 155,1), rgb(115, 210, 254,1)); /* Standard */
-
 }
 
 .custom-button{
@@ -100,16 +99,18 @@ body{
 }
 
 
+#center-div {
+    padding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
 
 
 #center-div h5 {
-    margin: auto;
-    padding: 10px;
+    padding: 10px 0px 0px 0px;
 }
 
 #center-div h3 {
-    margin: auto;
-    padding: auto;
     font-size: 30px;
     color: #203c48;
 }
