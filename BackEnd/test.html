@@ -28,24 +28,24 @@
         // apikey = "&api-key=" + 'bZL8pCAJYWgrasysArSqDvPTSs5MQpEd';
         // var queryURL = "https://api.nytimes.com/svc/search/v2/articlesearch.json?q=" + apikey;
 
-        let xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function () {
-            if (this.readyState === 4 && this.status === 200) {
-                let response = JSON.parse(this.responseText);
-                renderPosts(response);
-            }
-        }
-        // xhr.open("GET", "https://maximum.blog/@shalvah/posts");
-        xhr.open("POST", "https://cors-anywhere.herokuapp.com/https://personality-insights-demo.ng.bluemix.net/api/profile/text");
-        // xhr.open("GET", "https://cors-escape.herokuapp.com/https://maximum.blog/@shalvah/posts");
-        xhr.setRequestHeader("Accept", 'application/json');
-        xhr.setRequestHeader("Content-Type", 'application/json');
+        data = "Certified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data. Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methods";
 
-        xhr.setRequestHeader("Origin", 'https://personality-insights-demo.ng.bluemix.net');
-        // xhr.setFormData('text' ,"Well, thank you very much, Jim, for this opportunity. I want to thank Governor Romney and the University of Denver for your hospitality. There are a lot of points I want to make tonight, but the most important one is that 20 years ago I became the luckiest man on Earth because Michelle Obama agreed to marry me. And so I just want to wish, Sweetie, you happy anniversary and let you know that a year from now we will not be celebrating it in front of 40 million people.You know, four years ago we went through the worst financial crisis since the Great Depression. Millions of jobs were lost, the auto industry was on the brink of collapse. The financial system had frozen up.");
-        xhr.send("Well, thank you very much, Jim, for this opportunity. I want to thank Governor Romney and the University of Denver for your hospitality. There are a lot of points I want to make tonight, but the most important one is that 20 years ago I became the luckiest man on Earth because Michelle Obama agreed to marry me. And so I just want to wish, Sweetie, you happy anniversary and let you know that a year from now we will not be celebrating it in front of 40 million people.You know, four years ago we went through the worst financial crisis since the Great Depression. Millions of jobs were lost, the auto industry was on the brink of collapse. The financial system had frozen up.");
-        // xhr.send();
+        
+        $.ajax({
+            type: "POST",
+            url: "https://gateway.watsonplatform.net/personality-insights/api",
+            // url: 'https://personality-insights-demo.ng.bluemix.net/api/profile/text',
+            dataType: 'json',
+            data: data,
+            beforeSend: function (xhr) {
+                xhr.setRequestHeader('apikey', 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8');
+                xhr.setRequestHeader('Accept', 'application/json');
+                xhr.setRequestHeader('Content-Type', 'text/plain;charset=utf-8');
+            }.then(function (msg) {
+                console.log(msg);
+            })
 
+        });
 
     </script>
 
