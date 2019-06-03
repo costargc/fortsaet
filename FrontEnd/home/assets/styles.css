@@ -1,8 +1,10 @@
 body{
-    height: 2200px;
+    height: 4200px;
     font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
 }
 
+/* START START START home page - navbar */
 .navbar-custom {
     background-color: rgb(0, 0, 0, 0.5);
 }
@@ -27,39 +29,95 @@ body{
     font-size: 15px;
     margin-left: 10px;
 }
+/* END END END home page - navbar */
 
+/* START START START home page - block 1 */
 #bottomright {
     position: absolute;
     top: 300px;
     right: 5vw;
   }
 
-  #bottomright h1 {
+#bottomright h1 {
     font-size: 100px;
     text-align: right;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  }
+}
 
-  #bottomright h3 {
+#bottomright h3 {
     font-size: 30px;
     text-align: right;
     color: white;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  }
+}
 
-/* parallax - start */
 .parallax { 
     /* The image used */
-    background-image: url(../../../images/visual-identity/ML1.jpg);
-    height: 600px; 
+    background-image: url(../../../images/visual-identity/cover.jpeg);
+    height: 700px; 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-/* parallax - end */
+/* END END END home page - block 1 */
+
+
+
+/* START START START home page - block 3 */
+.gradient-content{
+    height: 500px;
+    background-color: rgb(115, 210, 254,1); /* For browsers that do not support gradients */
+    background-image: linear-gradient(90deg,rgb(112, 254, 155,1), rgb(115, 210, 254,1)); /* Standard */
+
+}
+
+.custom-button{
+    display:inline-block;
+    line-height:1;
+    color:#fff;
+    text-align:center;
+    transition:all .5s;
+    font-size:1.3333333333rem;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:1.8px;
+    background-color:#0076e5;
+    border-radius:50px;
+    padding:16px 36px;
+    border-style:solid;
+    border-width:1px;
+    border-color:#0076e5;
+} 
+
+.custom-button:hover{
+    background-color:rgba(0,118,229,0);
+    border-style:solid;
+    border-width:1px;
+    border-color:#0076e5;
+}
+
+
+
+
+#center-div h5 {
+    margin: auto;
+    padding: 10px;
+}
+
+#center-div h3 {
+    margin: auto;
+    padding: auto;
+    font-size: 30px;
+    color: #203c48;
+}
+/* END END END home page - block 3 */
+
+
+
+
 
 
 /* side bar - start */
