@@ -22,5 +22,7 @@ https://costargc.github.io/fortsaet/FrontEnd/home
 7. Potential employee should upload the information and should be able to view the result on page.
 
 Collaborators:
+
 Jose Ferreira
+
 Rodrigo Costa
