@@ -20,3 +20,6 @@ https://costargc.github.io/fortsaet/FrontEnd/home
 6. https://costargc.github.io/ something following this initial structure for the user side. (we still need to find out how the HR page will look like).
 
 7. Potential employee should upload the information and should be able to view the result on page.
+
+Collaborators:
+Jose Ferreira
