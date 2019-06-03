@@ -1,5 +1,6 @@
 body{
-    height: 1200px;
+    height: 2200px;
+    font-family: 'Lato', sans-serif;
 }
 
 .navbar-custom {
@@ -8,6 +9,12 @@ body{
 .navbar-brand{
     color: white;
     font-size: 30px;
+}
+
+.nav-link{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
 }
 
 .fa-bars{
@@ -21,7 +28,41 @@ body{
     margin-left: 10px;
 }
 
+#bottomright {
+    position: absolute;
+    bottom: 300px;
+    right: 5vw;
+  }
 
+  #bottomright h1 {
+    font-size: 100px;
+    text-align: right;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+  #bottomright h3 {
+    font-size: 50px;
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  }
+
+/* parallax - start */
+.parallax { 
+    /* The image used */
+    background-image: url(../../../images/visual-identity/ML1.jpg);
+    height: 600px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+/* parallax - end */
+
+
+/* side bar - start */
 #dismiss{
     display: none;
   }
@@ -47,8 +88,7 @@ body{
   #navbar-sidebar.active {
       left: 0;
       opacity:1;
-
-  }
+ }
   
   #dismiss {
       display: block;
@@ -85,5 +125,5 @@ body{
       display: block;
       opacity: 1;
   }  
-  
-  }
+    }
+  /* side bar - end */
