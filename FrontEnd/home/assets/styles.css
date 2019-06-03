@@ -30,7 +30,7 @@ body{
 
 #bottomright {
     position: absolute;
-    bottom: 300px;
+    top: 300px;
     right: 5vw;
   }
 
