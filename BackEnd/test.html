@@ -30,22 +30,37 @@
 
         data = "Certified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data. Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methods";
 
-        
+
         $.ajax({
             type: "POST",
-            url: "https://gateway.watsonplatform.net/personality-insights/api",
+            url: "https://cors-anywhere.herokuapp.com/https://gateway.watsonplatform.net/personality-insights/api",
             // url: 'https://personality-insights-demo.ng.bluemix.net/api/profile/text',
             dataType: 'json',
             data: data,
+            crossOrigin: true,
             beforeSend: function (xhr) {
                 xhr.setRequestHeader('apikey', 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8');
                 xhr.setRequestHeader('Accept', 'application/json');
                 xhr.setRequestHeader('Content-Type', 'text/plain;charset=utf-8');
-            }.then(function (msg) {
-                console.log(msg);
-            })
-
+            },
+            success: function (data) {
+                if (append) {
+                    $(placeholder).append(data);
+                } else {
+                    $(placeholder).html(data);
+                }
+            },
+            error: function (xhr) { // if error occured
+                alert("Error occured.please try again");
+                $(placeholder).append(xhr.statusText + xhr.responseText);
+                $(placeholder).removeClass('loading');
+            },
+            complete: function () {
+                $(placeholder).removeClass('loading');
+            },
+            dataType: 'html'
         });
+
 
     </script>
 
