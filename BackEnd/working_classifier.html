@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <script>
+
+        value1 = "Certified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data. Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methods";
+        value2 = "Certified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data. Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methods";
+
+        value = value1 + value2;
+
+
+        $.ajax({
+            type: 'POST',
+            url: 'https://cors-anywhere.herokuapp.com/https://natural-language-classifier-demo.ng.bluemix.net/api/classify',
+
+            dataType: 'json',
+            data: {
+                text: value
+
+            },
+            crossOrigin: true,
+            beforeSend: function (xhr) {
+            },
+            success: function (body) {
+                console.log(body);
+            },
+            error: function (xhr) { // if error occured
+                console.log(xhr);
+            },
+            // dataType: 'html'
+        });
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
