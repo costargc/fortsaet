@@ -8,6 +8,7 @@
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+
 </head>
 
 <body>
@@ -19,19 +20,19 @@
         value2 = "Certified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data. Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methods";
 
         value = value1 + value2;
-
+        // value="";
+        valueA = JSON.stringify({ features: { concepts: {}, entities: {}, keywords: {}, categories: {}, emotion: {}, sentiment: {}, semantic_roles: {}, syntax: { tokens: { lemma: true, part_of_speech: true }, sentences: true } }, text: value });
+        // console.log(valueA);
 
         $.ajax({
             type: 'POST',
-            url: 'https://cors-anywhere.herokuapp.com/https://natural-language-classifier-demo.ng.bluemix.net/api/classify',
+            url: "https://cors-anywhere.herokuapp.com/https://natural-language-understanding-demo.ng.bluemix.net/api/analyze",
+            contentType: 'application/json',
+            data: valueA,
 
-            dataType: 'json',
-            data: {
-                text: value
-
-            },
             crossOrigin: true,
             beforeSend: function (xhr) {
+
             },
             success: function (body) {
                 console.log(body);
