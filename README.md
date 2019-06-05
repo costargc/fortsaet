@@ -1,7 +1,7 @@
 # fortsaet
 HR hiring tool to provide insight in to potential employees.
 
-https://costargc.github.io/fortsaet/FrontEnd/home
+https://costargc.github.io/fortsaet/
 
 
 ![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/fortsaet.PNG?raw=true)
