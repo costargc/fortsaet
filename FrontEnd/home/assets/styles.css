@@ -1,7 +1,8 @@
 body{
-    height: 4200px;
+    padding-bottom: 100px;
     font-family: 'Lato', sans-serif;
 }
+
 
 /* START START START home page - navbar */
 .navbar-custom {
@@ -30,21 +31,34 @@ body{
 }
 /* END END END home page - navbar */
 
-/* START START START home page - block 1 */
-#bottomright {
+
+/* START START START home page - block 1 PARALAX */
+#titlemenu {
     position: absolute;
     top: 300px;
     right: 5vw;
+    animation: titlemenu 3s ease-out;
   }
 
-#bottomright h1 {
+
+@keyframes titlemenu
+{
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 300px;;
+  }
+}
+
+#titlemenu h1 {
     font-size: 100px;
     text-align: right;
     color: white;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
 }
 
-#bottomright h3 {
+#titlemenu h3 {
     font-size: 30px;
     text-align: right;
     color: white;
@@ -93,7 +107,9 @@ body{
 
 
 
-/* START START START home page - block 3 */
+
+
+/* START START START home page - block 3 GRADIENT*/
 .gradient-content{
     height: 500px;
     background-color: rgb(115, 210, 254,1); /* For browsers that do not support gradients */
@@ -142,6 +158,172 @@ body{
     color: #203c48;
 }
 /* END END END home page - block 3 */
+
+
+
+
+
+
+
+
+/* START START START home page - block 5 HOW TO */
+
+.howtoblock{
+    background-color: #203c48;
+    color: white;
+}
+
+.howtoimage{
+    height: 125px;
+    width: 125px;
+    color: white; /* #32638b*/
+    border:2px solid white;/* #32638b*/
+    background-color: rgb(0, 0, 0,0);
+    border-radius: 50%;
+    font-size:75px;
+    display: inline-block;
+    margin: auto;
+}
+
+#hidden_id1, #hidden_id2, #hidden_id3  {
+    opacity: 0;
+}
+
+#animateht1 {
+    opacity: 1;
+    animation: animateht1 1s ease-out;
+    /* animation-delay: 0s; */
+  }
+  #animateht2 {
+    opacity: 1;
+    animation: animateht2 1s ease-out;
+    /* animation-duration: 2s; */
+  }
+  #animateht3 {
+    opacity: 1;
+    animation: animateht3 1s ease-out;
+    /* animation-duration: 4s; */
+  }
+
+
+@keyframes animateht1
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes animateht2
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes animateht3
+{
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+/* END END END home page - block 5 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* START START START home page - block 4 TECH USED */
+.techUsed{
+    padding: 25px 35px 25px 35px;
+    margin: auto;
+    align-content: center;
+    filter: grayscale(1);
+}
+
+.techUsed:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+}
+/* END END END home page - block 4 */
+
+
+
+
+
+
+
+
+
+
+
+/* START START START home page - block 5 MIDDLE BAR */
+.breakpage{
+    height: 150px;
+    background-color: rgb(115, 210, 254,1); /* For browsers that do not support gradients */
+    background-image: linear-gradient(90deg,rgb(254, 178, 230), #fe9f73); /* Standard */
+
+}
+.circle{
+    height: 125px;
+    width: 125px;
+    color: #203c48; /* #32638b*/
+    border:2px solid #203c48;/* #32638b*/
+    background-color: rgb(0, 0, 0,0);
+    border-radius: 50%;
+    font-size:75px;
+    display: inline-block;
+    margin: auto;
+}
+
+/* END END END home page - block 5 */
+
+
+
+
+
+
+
+/* END END END home page - block 5 TEAM */
+.text-uppercase{
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+}
+
+#directortitle{
+    margin: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    font-size: 15px;
+}
+
+.fab, .p-2, .list-unstyled{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: black;
+    text-decoration: none;
+}
+.list-unstyled{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    color: black;
+    text-decoration: none;
+}
+.custom-text:hover{
+    opacity: 0.5;
+}
+
+/* END END END home page - block 5 */
+
+
+
+
+
+
+
 
 
 
