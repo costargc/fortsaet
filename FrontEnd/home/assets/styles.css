@@ -192,17 +192,14 @@ body{
 #animateht1 {
     opacity: 1;
     animation: animateht1 1s ease-out;
-    /* animation-delay: 0s; */
   }
   #animateht2 {
     opacity: 1;
     animation: animateht2 1s ease-out;
-    /* animation-duration: 2s; */
   }
   #animateht3 {
     opacity: 1;
     animation: animateht3 1s ease-out;
-    /* animation-duration: 4s; */
   }
 
 
@@ -314,6 +311,18 @@ body{
 }
 .custom-text:hover{
     opacity: 0.5;
+}
+
+.columbiaimg{
+    padding: 25px 0px 25px 0px;
+    margin: auto;
+    align-content: center;
+    filter: grayscale(1);
+}
+
+.columbiaimg:hover{
+    filter: grayscale(0);
+    cursor: pointer;
 }
 
 /* END END END home page - block 5 */
