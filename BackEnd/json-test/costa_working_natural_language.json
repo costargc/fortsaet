@@ -1,0 +1,1346 @@
+{
+    "results": {
+        "usage": {
+            "text_units": 1,
+            "text_characters": 738,
+            "features": 7
+        },
+        "syntax": {
+            "tokens": [
+                {
+                    "text": "Certified",
+                    "part_of_speech": "VERB",
+                    "location": [
+                        0,
+                        9
+                    ],
+                    "lemma": "certify"
+                },
+                {
+                    "text": "Project",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        10,
+                        17
+                    ],
+                    "lemma": "project"
+                },
+                {
+                    "text": "Manager",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        18,
+                        25
+                    ],
+                    "lemma": "manager"
+                },
+                {
+                    "text": "with",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        26,
+                        30
+                    ],
+                    "lemma": "with"
+                },
+                {
+                    "text": "a",
+                    "part_of_speech": "DET",
+                    "location": [
+                        31,
+                        32
+                    ],
+                    "lemma": "a"
+                },
+                {
+                    "text": "Quant",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        33,
+                        38
+                    ]
+                },
+                {
+                    "text": "background",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        39,
+                        49
+                    ],
+                    "lemma": "background"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        49,
+                        50
+                    ]
+                },
+                {
+                    "text": "+",
+                    "part_of_speech": "SYM",
+                    "location": [
+                        51,
+                        52
+                    ]
+                },
+                {
+                    "text": "8",
+                    "part_of_speech": "NUM",
+                    "location": [
+                        52,
+                        53
+                    ]
+                },
+                {
+                    "text": "years",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        54,
+                        59
+                    ],
+                    "lemma": "year"
+                },
+                {
+                    "text": "of",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        60,
+                        62
+                    ],
+                    "lemma": "of"
+                },
+                {
+                    "text": "experience",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        63,
+                        73
+                    ],
+                    "lemma": "experience"
+                },
+                {
+                    "text": "in",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        74,
+                        76
+                    ],
+                    "lemma": "in"
+                },
+                {
+                    "text": "banking",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        77,
+                        84
+                    ],
+                    "lemma": "banking"
+                },
+                {
+                    "text": "industry",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        85,
+                        93
+                    ],
+                    "lemma": "industry"
+                },
+                {
+                    "text": "working",
+                    "part_of_speech": "VERB",
+                    "location": [
+                        94,
+                        101
+                    ],
+                    "lemma": "work"
+                },
+                {
+                    "text": "on",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        102,
+                        104
+                    ],
+                    "lemma": "on"
+                },
+                {
+                    "text": "Market",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        105,
+                        111
+                    ],
+                    "lemma": "market"
+                },
+                {
+                    "text": "Risk",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        112,
+                        116
+                    ],
+                    "lemma": "risk"
+                },
+                {
+                    "text": "Analytical",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        117,
+                        127
+                    ]
+                },
+                {
+                    "text": "Modeling",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        128,
+                        136
+                    ]
+                },
+                {
+                    "text": "&",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        137,
+                        138
+                    ]
+                },
+                {
+                    "text": "Projects",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        139,
+                        147
+                    ],
+                    "lemma": "project"
+                },
+                {
+                    "text": "on",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        148,
+                        150
+                    ],
+                    "lemma": "on"
+                },
+                {
+                    "text": "Trade",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        151,
+                        156
+                    ],
+                    "lemma": "trade"
+                },
+                {
+                    "text": "Capture",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        157,
+                        164
+                    ],
+                    "lemma": "capture"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        164,
+                        165
+                    ]
+                },
+                {
+                    "text": "Data",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        166,
+                        170
+                    ],
+                    "lemma": "data"
+                },
+                {
+                    "text": "Processing",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        171,
+                        181
+                    ]
+                },
+                {
+                    "text": "and",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        182,
+                        185
+                    ],
+                    "lemma": "and"
+                },
+                {
+                    "text": "Data",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        186,
+                        190
+                    ],
+                    "lemma": "data"
+                },
+                {
+                    "text": "Analysis",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        191,
+                        199
+                    ],
+                    "lemma": "analysis"
+                },
+                {
+                    "text": "for",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        200,
+                        203
+                    ],
+                    "lemma": "for"
+                },
+                {
+                    "text": "Risk",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        204,
+                        208
+                    ],
+                    "lemma": "risk"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        208,
+                        209
+                    ]
+                },
+                {
+                    "text": "PnL",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        210,
+                        213
+                    ]
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        213,
+                        214
+                    ]
+                },
+                {
+                    "text": "PLA",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        215,
+                        218
+                    ]
+                },
+                {
+                    "text": "and",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        219,
+                        222
+                    ],
+                    "lemma": "and"
+                },
+                {
+                    "text": "Market",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        223,
+                        229
+                    ],
+                    "lemma": "market"
+                },
+                {
+                    "text": "Data",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        230,
+                        234
+                    ],
+                    "lemma": "data"
+                },
+                {
+                    "text": ".",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        234,
+                        235
+                    ]
+                },
+                {
+                    "text": "Knowledgeable",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        236,
+                        249
+                    ],
+                    "lemma": "knowledgeable"
+                },
+                {
+                    "text": "of",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        250,
+                        252
+                    ],
+                    "lemma": "of"
+                },
+                {
+                    "text": "financial",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        253,
+                        262
+                    ],
+                    "lemma": "financial"
+                },
+                {
+                    "text": "principles",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        263,
+                        273
+                    ],
+                    "lemma": "principle"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        273,
+                        274
+                    ]
+                },
+                {
+                    "text": "products",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        275,
+                        283
+                    ],
+                    "lemma": "product"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        283,
+                        284
+                    ]
+                },
+                {
+                    "text": "processes",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        285,
+                        294
+                    ],
+                    "lemma": "process"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        294,
+                        295
+                    ]
+                },
+                {
+                    "text": "systems",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        296,
+                        303
+                    ],
+                    "lemma": "system"
+                },
+                {
+                    "text": "and",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        304,
+                        307
+                    ],
+                    "lemma": "and"
+                },
+                {
+                    "text": "able",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        308,
+                        312
+                    ],
+                    "lemma": "able"
+                },
+                {
+                    "text": "to",
+                    "part_of_speech": "PART",
+                    "location": [
+                        313,
+                        315
+                    ],
+                    "lemma": "to"
+                },
+                {
+                    "text": "understand",
+                    "part_of_speech": "VERB",
+                    "location": [
+                        316,
+                        326
+                    ],
+                    "lemma": "understand"
+                },
+                {
+                    "text": "and",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        327,
+                        330
+                    ],
+                    "lemma": "and"
+                },
+                {
+                    "text": "communicate",
+                    "part_of_speech": "VERB",
+                    "location": [
+                        331,
+                        342
+                    ],
+                    "lemma": "communicate"
+                },
+                {
+                    "text": "through",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        343,
+                        350
+                    ],
+                    "lemma": "through"
+                },
+                {
+                    "text": "analytical",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        351,
+                        361
+                    ],
+                    "lemma": "analytic"
+                },
+                {
+                    "text": "methodsCertified",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        362,
+                        378
+                    ]
+                },
+                {
+                    "text": "Project",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        379,
+                        386
+                    ],
+                    "lemma": "project"
+                },
+                {
+                    "text": "Manager",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        387,
+                        394
+                    ],
+                    "lemma": "manager"
+                },
+                {
+                    "text": "with",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        395,
+                        399
+                    ],
+                    "lemma": "with"
+                },
+                {
+                    "text": "a",
+                    "part_of_speech": "DET",
+                    "location": [
+                        400,
+                        401
+                    ],
+                    "lemma": "a"
+                },
+                {
+                    "text": "Quant",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        402,
+                        407
+                    ]
+                },
+                {
+                    "text": "background",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        408,
+                        418
+                    ],
+                    "lemma": "background"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        418,
+                        419
+                    ]
+                },
+                {
+                    "text": "+",
+                    "part_of_speech": "SYM",
+                    "location": [
+                        420,
+                        421
+                    ]
+                },
+                {
+                    "text": "8",
+                    "part_of_speech": "NUM",
+                    "location": [
+                        421,
+                        422
+                    ]
+                },
+                {
+                    "text": "years",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        423,
+                        428
+                    ],
+                    "lemma": "year"
+                },
+                {
+                    "text": "of",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        429,
+                        431
+                    ],
+                    "lemma": "of"
+                },
+                {
+                    "text": "experience",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        432,
+                        442
+                    ],
+                    "lemma": "experience"
+                },
+                {
+                    "text": "in",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        443,
+                        445
+                    ],
+                    "lemma": "in"
+                },
+                {
+                    "text": "banking",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        446,
+                        453
+                    ],
+                    "lemma": "banking"
+                },
+                {
+                    "text": "industry",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        454,
+                        462
+                    ],
+                    "lemma": "industry"
+                },
+                {
+                    "text": "working",
+                    "part_of_speech": "VERB",
+                    "location": [
+                        463,
+                        470
+                    ],
+                    "lemma": "work"
+                },
+                {
+                    "text": "on",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        471,
+                        473
+                    ],
+                    "lemma": "on"
+                },
+                {
+                    "text": "Market",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        474,
+                        480
+                    ],
+                    "lemma": "market"
+                },
+                {
+                    "text": "Risk",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        481,
+                        485
+                    ],
+                    "lemma": "risk"
+                },
+                {
+                    "text": "Analytical",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        486,
+                        496
+                    ]
+                },
+                {
+                    "text": "Modeling",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        497,
+                        505
+                    ]
+                },
+                {
+                    "text": "&",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        506,
+                        507
+                    ]
+                },
+                {
+                    "text": "Projects",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        508,
+                        516
+                    ],
+                    "lemma": "project"
+                },
+                {
+                    "text": "on",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        517,
+                        519
+                    ],
+                    "lemma": "on"
+                },
+                {
+                    "text": "Trade",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        520,
+                        525
+                    ],
+                    "lemma": "trade"
+                },
+                {
+                    "text": "Capture",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        526,
+                        533
+                    ],
+                    "lemma": "capture"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        533,
+                        534
+                    ]
+                },
+                {
+                    "text": "Data",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        535,
+                        539
+                    ],
+                    "lemma": "data"
+                },
+                {
+                    "text": "Processing",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        540,
+                        550
+                    ]
+                },
+                {
+                    "text": "and",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        551,
+                        554
+                    ],
+                    "lemma": "and"
+                },
+                {
+                    "text": "Data",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        555,
+                        559
+                    ],
+                    "lemma": "data"
+                },
+                {
+                    "text": "Analysis",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        560,
+                        568
+                    ],
+                    "lemma": "analysis"
+                },
+                {
+                    "text": "for",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        569,
+                        572
+                    ],
+                    "lemma": "for"
+                },
+                {
+                    "text": "Risk",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        573,
+                        577
+                    ],
+                    "lemma": "risk"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        577,
+                        578
+                    ]
+                },
+                {
+                    "text": "PnL",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        579,
+                        582
+                    ]
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        582,
+                        583
+                    ]
+                },
+                {
+                    "text": "PLA",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        584,
+                        587
+                    ]
+                },
+                {
+                    "text": "and",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        588,
+                        591
+                    ],
+                    "lemma": "and"
+                },
+                {
+                    "text": "Market",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        592,
+                        598
+                    ],
+                    "lemma": "market"
+                },
+                {
+                    "text": "Data",
+                    "part_of_speech": "PROPN",
+                    "location": [
+                        599,
+                        603
+                    ],
+                    "lemma": "data"
+                },
+                {
+                    "text": ".",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        603,
+                        604
+                    ]
+                },
+                {
+                    "text": "Knowledgeable",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        605,
+                        618
+                    ],
+                    "lemma": "knowledgeable"
+                },
+                {
+                    "text": "of",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        619,
+                        621
+                    ],
+                    "lemma": "of"
+                },
+                {
+                    "text": "financial",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        622,
+                        631
+                    ],
+                    "lemma": "financial"
+                },
+                {
+                    "text": "principles",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        632,
+                        642
+                    ],
+                    "lemma": "principle"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        642,
+                        643
+                    ]
+                },
+                {
+                    "text": "products",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        644,
+                        652
+                    ],
+                    "lemma": "product"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        652,
+                        653
+                    ]
+                },
+                {
+                    "text": "processes",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        654,
+                        663
+                    ],
+                    "lemma": "process"
+                },
+                {
+                    "text": ",",
+                    "part_of_speech": "PUNCT",
+                    "location": [
+                        663,
+                        664
+                    ]
+                },
+                {
+                    "text": "systems",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        665,
+                        672
+                    ],
+                    "lemma": "system"
+                },
+                {
+                    "text": "and",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        673,
+                        676
+                    ],
+                    "lemma": "and"
+                },
+                {
+                    "text": "able",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        677,
+                        681
+                    ],
+                    "lemma": "able"
+                },
+                {
+                    "text": "to",
+                    "part_of_speech": "PART",
+                    "location": [
+                        682,
+                        684
+                    ],
+                    "lemma": "to"
+                },
+                {
+                    "text": "understand",
+                    "part_of_speech": "VERB",
+                    "location": [
+                        685,
+                        695
+                    ],
+                    "lemma": "understand"
+                },
+                {
+                    "text": "and",
+                    "part_of_speech": "CCONJ",
+                    "location": [
+                        696,
+                        699
+                    ],
+                    "lemma": "and"
+                },
+                {
+                    "text": "communicate",
+                    "part_of_speech": "VERB",
+                    "location": [
+                        700,
+                        711
+                    ],
+                    "lemma": "communicate"
+                },
+                {
+                    "text": "through",
+                    "part_of_speech": "ADP",
+                    "location": [
+                        712,
+                        719
+                    ],
+                    "lemma": "through"
+                },
+                {
+                    "text": "analytical",
+                    "part_of_speech": "ADJ",
+                    "location": [
+                        720,
+                        730
+                    ],
+                    "lemma": "analytic"
+                },
+                {
+                    "text": "methods",
+                    "part_of_speech": "NOUN",
+                    "location": [
+                        731,
+                        738
+                    ],
+                    "lemma": "method"
+                }
+            ],
+            "sentences": [
+                {
+                    "text": "Certified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data.",
+                    "location": [
+                        0,
+                        235
+                    ]
+                },
+                {
+                    "text": "Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methodsCertified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data.",
+                    "location": [
+                        236,
+                        604
+                    ]
+                },
+                {
+                    "text": "Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methods",
+                    "location": [
+                        605,
+                        738
+                    ]
+                }
+            ]
+        },
+        "sentiment": {
+            "document": {
+                "score": 0.909366,
+                "label": "positive"
+            }
+        },
+        "semantic_roles": [
+            {
+                "subject": {
+                    "text": "+8 years of experience in banking industry"
+                },
+                "sentence": "Certified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data.",
+                "object": {
+                    "text": "on Trade Capture, Data Processing and Data Analysis"
+                },
+                "action": {
+                    "verb": {
+                        "text": "work",
+                        "tense": "present"
+                    },
+                    "text": "working",
+                    "normalized": "work"
+                }
+            },
+            {
+                "subject": {
+                    "text": "Data Processing and Data Analysis for Risk, PnL, PLA and Market Data"
+                },
+                "sentence": " Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methodsCertified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data.",
+                "object": {
+                    "text": "through analytical methodsCertified Project Manager"
+                },
+                "action": {
+                    "verb": {
+                        "text": "communicate",
+                        "tense": "present"
+                    },
+                    "text": "to understand and communicate",
+                    "normalized": "to understand and communicate"
+                }
+            },
+            {
+                "subject": {
+                    "text": "experience in banking industry"
+                },
+                "sentence": " Knowledgeable of financial principles, products, processes, systems and able to understand and communicate through analytical methodsCertified Project Manager with a Quant background, +8 years of experience in banking industry working on Market Risk Analytical Modeling & Projects on Trade Capture, Data Processing and Data Analysis for Risk, PnL, PLA and Market Data.",
+                "object": {
+                    "text": "on Trade Capture, Data Processing and Data Analysis for Risk"
+                },
+                "action": {
+                    "verb": {
+                        "text": "work",
+                        "tense": "present"
+                    },
+                    "text": "working",
+                    "normalized": "work"
+                }
+            }
+        ],
+        "language": "en",
+        "keywords": [
+            {
+                "text": "Project Manager",
+                "relevance": 0.872502,
+                "count": 1
+            },
+            {
+                "text": "Data Processing",
+                "relevance": 0.796554,
+                "count": 2
+            },
+            {
+                "text": "Market Risk Analytical Modeling",
+                "relevance": 0.766151,
+                "count": 2
+            },
+            {
+                "text": "banking industry",
+                "relevance": 0.759271,
+                "count": 2
+            },
+            {
+                "text": "financial principles",
+                "relevance": 0.710918,
+                "count": 2
+            },
+            {
+                "text": "Data Analysis",
+                "relevance": 0.706527,
+                "count": 2
+            },
+            {
+                "text": "Quant background",
+                "relevance": 0.620298,
+                "count": 2
+            },
+            {
+                "text": "analytical methods",
+                "relevance": 0.608253,
+                "count": 1
+            },
+            {
+                "text": "analytical methodsCertified Project Manager",
+                "relevance": 0.604904,
+                "count": 1
+            },
+            {
+                "text": "years of experience",
+                "relevance": 0.597667,
+                "count": 2
+            },
+            {
+                "text": "products",
+                "relevance": 0.549328,
+                "count": 2
+            },
+            {
+                "text": "processes",
+                "relevance": 0.54783,
+                "count": 2
+            },
+            {
+                "text": "Projects",
+                "relevance": 0.540761,
+                "count": 2
+            },
+            {
+                "text": "Risk",
+                "relevance": 0.532573,
+                "count": 2
+            },
+            {
+                "text": "Trade Capture",
+                "relevance": 0.524637,
+                "count": 2
+            },
+            {
+                "text": "PnL",
+                "relevance": 0.524483,
+                "count": 2
+            },
+            {
+                "text": "PLA",
+                "relevance": 0.520197,
+                "count": 2
+            },
+            {
+                "text": "Market Data",
+                "relevance": 0.449557,
+                "count": 2
+            },
+            {
+                "text": "systems",
+                "relevance": 0.341573,
+                "count": 2
+            }
+        ],
+        "entities": [
+            {
+                "type": "JobTitle",
+                "text": "Project Manager",
+                "relevance": 0.663422,
+                "count": 2
+            },
+            {
+                "type": "Quantity",
+                "text": "8 years",
+                "relevance": 0.663422,
+                "count": 2
+            }
+        ],
+        "emotion": {
+            "document": {
+                "emotion": {
+                    "sadness": 0.032495,
+                    "joy": 0.467877,
+                    "fear": 0.027119,
+                    "disgust": 0.006683,
+                    "anger": 0.125358
+                }
+            }
+        },
+        "concepts": [
+            {
+                "text": "Data",
+                "relevance": 0.959143,
+                "dbpedia_resource": "http://dbpedia.org/resource/Data"
+            },
+            {
+                "text": "Bank",
+                "relevance": 0.94253,
+                "dbpedia_resource": "http://dbpedia.org/resource/Bank"
+            },
+            {
+                "text": "Finance",
+                "relevance": 0.893888,
+                "dbpedia_resource": "http://dbpedia.org/resource/Finance"
+            },
+            {
+                "text": "Knowledge",
+                "relevance": 0.849585,
+                "dbpedia_resource": "http://dbpedia.org/resource/Knowledge"
+            },
+            {
+                "text": "Project management",
+                "relevance": 0.794961,
+                "dbpedia_resource": "http://dbpedia.org/resource/Project_management"
+            },
+            {
+                "text": "Risk",
+                "relevance": 0.727261,
+                "dbpedia_resource": "http://dbpedia.org/resource/Risk"
+            },
+            {
+                "text": "Economics",
+                "relevance": 0.705509,
+                "dbpedia_resource": "http://dbpedia.org/resource/Economics"
+            },
+            {
+                "text": "Construction",
+                "relevance": 0.647472,
+                "dbpedia_resource": "http://dbpedia.org/resource/Construction"
+            }
+        ],
+        "categories": [
+            {
+                "score": 0.761888,
+                "label": "/finance/financial news"
+            },
+            {
+                "score": 0.678217,
+                "label": "/business and industrial/business operations/management/business process"
+            },
+            {
+                "score": 0.578854,
+                "label": "/finance/bank"
+            }
+        ]
+    }
+}
