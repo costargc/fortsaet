@@ -13,7 +13,7 @@ $(document).ready(function () {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-    function wordCheck (str) {
+    function wordCheck(str) {
         var wordCount = str.split(" ").length;
         console.log(wordCount);
         if (wordCount < 200) {
@@ -22,6 +22,8 @@ $(document).ready(function () {
     }
 
     $("#analyze").on("click", function () {
+
+        $("#display-error").empty();
 
         value1 = $("#cv-text-1").val();
         //console.log(value1);
@@ -49,7 +51,9 @@ $(document).ready(function () {
             },
             error: function (xhr) {
                 console.log(xhr);
-            },
+            }
+        }).then(function (body) {
+            $("#display-results").text(JSON.stringify(body));
         });
 
         //Call to Personality Insights
@@ -65,18 +69,15 @@ $(document).ready(function () {
             beforeSend: function (xhr) {
             },
             success: function (body) {
-            console.log(body);
+                console.log(body);
 
             },
             error: function (xhr) { // if error occured
                 console.log(xhr);
             },
             // dataType: 'html'
+        }).then(function (body) {
+            $("#display-results").text(JSON.stringify(body));
         });
-
-
     })
-
-
-
 });
