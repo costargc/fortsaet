@@ -9,6 +9,7 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -25,6 +26,9 @@
     <link rel="stylesheet" href="./FrontEnd/home/assets/styles.css">
     <script src="./FrontEnd/home/assets/page.js"></script>
 
+    <!-- firbase setup -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
 
 
 
@@ -196,11 +200,12 @@
                             </div>
 
                             <div class="modal-body">
-                                ...
+                                    <label for="cv-text-1">Example textarea</label>
+                                    <textarea class="form-control" id="cv-text-1" rows="3"></textarea>
                             </div>
 
                             <div class="modal-footer">
-                                <button type="button" class="custom-button-sm">Send Resume</button>
+                                <button type="button" class="custom-button-sm" id="analyze">Send Resume</button>
                             </div>
 
                         </div>
@@ -598,7 +603,7 @@
 
 
 
-
+<script type="text/javascript" src="./BackEnd/app.js"></script>
 
 </body>
 
