@@ -13,7 +13,7 @@ $(document).ready(function () {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-    function wordCheck (str) {
+    function wordCheck(str) {
         var wordCount = str.split(" ").length;
         console.log(wordCount);
         if (wordCount < 200) {
@@ -22,19 +22,25 @@ $(document).ready(function () {
     }
 
     $("#analyze").on("click", function () {
+        var natural_language;
+        var personality;
 
-        value1 = $("#cv-text-1").val();
-        //console.log(value1);
-        value2 = $("#cv-text-2").val();
-        //console.log(value2);
-        value = value1 + value2;
-        //console.log(value);
+        $('#loadingmodal').css('display', 'flex');
+        $('#textmodal').css('display', 'none');
+
+
+        value = $("#cv-text-1").val().trim();
+
         wordCheck(value);
 
         valueA = JSON.stringify({ features: { concepts: {}, entities: {}, keywords: {}, categories: {}, emotion: {}, sentiment: {}, semantic_roles: {}, syntax: { tokens: { lemma: true, part_of_speech: true }, sentences: true } }, text: value });
         // console.log(valueA);
 
         //Call to Natural Language Understanding
+        sessionStorage.clear();
+
+        // had to add one ajax call inside the other in order to be able to change to the dashboard page in an syncronous way.
+
         $.ajax({
             type: 'POST',
             url: "https://cors-anywhere.herokuapp.com/https://natural-language-understanding-demo.ng.bluemix.net/api/analyze",
@@ -45,34 +51,51 @@ $(document).ready(function () {
             beforeSend: function (xhr) {
             },
             success: function (body) {
-                console.log(body);
+                // console.log(body);
+                natural_language = body;
+                sessionStorage.setItem('natural_language', JSON.stringify(natural_language));
+                callPersonality();
             },
             error: function (xhr) {
                 console.log(xhr);
+                $('#loadingmodal').css('display', 'none');
+                $('#textmodal').css('display', 'flex');
             },
-        });
+        })
 
         //Call to Personality Insights
-        $.ajax({
-            type: 'POST',
-            url: 'https://cors-anywhere.herokuapp.com/https://personality-insights-demo.ng.bluemix.net/api/profile/text',
+        function callPersonality() {
+            $.ajax({
+                type: 'POST',
+                url: 'https://cors-anywhere.herokuapp.com/https://personality-insights-demo.ng.bluemix.net/api/profile/text',
 
-            dataType: 'json',
-            data: {
-                text: value
-            },
-            crossOrigin: true,
-            beforeSend: function (xhr) {
-            },
-            success: function (body) {
-            console.log(body);
+                dataType: 'json',
+                data: {
+                    text: value
+                },
+                crossOrigin: true,
+                beforeSend: function (xhr) {
+                },
+                success: function (body) {
+                    // console.log(body);
+                    personality = body;
+                    sessionStorage.setItem('personality', JSON.stringify(personality));
 
-            },
-            error: function (xhr) { // if error occured
-                console.log(xhr);
-            },
-            // dataType: 'html'
-        });
+                    console.log(JSON.parse(sessionStorage.getItem('natural_language')));
+                    console.log(JSON.parse(sessionStorage.getItem('personality')));
+                    // change to dashboard page
+                    window.open('./dashboard/index.html', '_self');
+
+                },
+                error: function (xhr) { // if error occured
+                    console.log(xhr);
+                    $('#loadingmodal').css('display', 'none');
+                    $('#textmodal').css('display', 'flex');
+                },
+                // dataType: 'html'
+            });
+
+        }
 
 
     })

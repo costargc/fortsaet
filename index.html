@@ -186,7 +186,7 @@
                 <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
                     aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
-                        <div class="modal-content">
+                        <div class="modal-content" id='textmodal'>
 
                             <div class="modal-header">
                                 <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center">
@@ -198,15 +198,35 @@
                                 </button>
                             </div>
 
-                            <div class="modal-body">
-                                <textarea class="form-control" id="cv-text-1" rows="20" placeholder="paste your resume here... (text format)"></textarea>
+                            <div class="modal-body" style="height: 526px;">
+                                <textarea class="form-control" id="cv-text-1" rows="20" placeholder='paste your resume here... text format' style="max-height: 500px;"></textarea>
                             </div>
 
                             <div class="modal-footer">
-                                <button type="button" class="custom-button-sm" id="analyze">Review Resume</button>
+
+
+                                <!-- <a href="./dashboard/index.html" style="text-decoration: none;"> -->
+                                <button type="button" class="custom-button-sm" id="analyze">
+                                    Review Resume
+                                </button>
+                                <!-- </a> -->
+
+
                             </div>
 
                         </div>
+
+                        <div class="modal-content" id='loadingmodal' style="background: rgba(255, 255, 255, 0.7)">
+
+
+                            <div class="modal-body text-center" style="height: 672px;">
+                                <div class="spinner-border text-primary" role="status" style="width: 250px; height: 250px; border-width: 2em;text-align: center; margin: 190px auto 0 auto;"></div>
+                            </div>
+
+
+                        </div>
+
+
                     </div>
                 </div>
 
