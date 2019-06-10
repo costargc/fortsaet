@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <script>
+
+
+        $.ajax({
+            type: "POST",
+            url: 'https://cors-anywhere.herokuapp.com/https://api.mailgun.net/v3/www.fortsaet.com/messages',
+            // username: 'api',
+            // password: '869ab754d305da11bfb35a2c8033f05d-16ffd509-863b1f11',
+            headers: {
+                "Authorization": "Basic " + btoa('api:869ab754d305da11bfb35a2c8033f05d-16ffd509-863b1f11'),
+                'access-control-allow-credentials': true,
+            },
+            data: {
+                from: 'Awesome AI Team <noreply@fortsaet.com>',
+                to: 'costa.rgc@gmail.com',
+                subject: 'Hello',
+                text: 'Welcome to the team!'
+            }
+        }).then(
+            response => {
+                console.log(response)
+            },
+            reject => {
+                console.log(reject)
+            }
+        )
+
+        
+    </script>
+
+
+</body>
+
+</html>
