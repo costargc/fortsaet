@@ -9,6 +9,7 @@
 
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -25,6 +26,9 @@
     <link rel="stylesheet" href="./FrontEnd/home/assets/styles.css">
     <script src="./FrontEnd/home/assets/page.js"></script>
 
+    <!-- firbase setup -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
 
 
 
@@ -44,7 +48,7 @@
                 <span><span class="fa fa-bars" aria-hidden="true"></span><span id="menu">MENU</span></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbar-sidebar">
+            <div class=" navbar-collapse" id="navbar-sidebar">
 
                 <div id="dismiss">
                     <i class="fa fa-arrow-left"></i>
@@ -98,7 +102,13 @@
                 <h3 style="text-align: right;">Making Machine Learning </h3>
                 <h3 style="text-align: right;">Information Transparent</h3>
                 <h4 style="text-align: right;">Take control on how a machine sees you!</h4>
-                <button class="custom-button-white">take control</button>
+
+                <a href="#app" style="text-decoration: none;">
+                    <button class="custom-button-white">
+                        take control
+                    </button>
+                </a>
+
             </div>
         </div>
     </div>
@@ -124,17 +134,21 @@
 
             <div class="col-md-6 my-auto text-justify">
 
-                <h1 class="font-weight-bold" style="padding-top: 30px; padding-bottom: 25px;">Machine Learning is deciding about your live
+                <h1 class="font-weight-bold" style="padding-top: 30px; padding-bottom: 25px;">Machine Learning is
+                    deciding about your live
                     and you don't even know it!</h1>
 
-                <h5 style="padding-bottom: 25px;">Did you know that in <a href="https://hbr.org/2015/07/ace-the-assessment" style="text-decoration: none;">76%
+                <h5 style="padding-bottom: 25px;">Did you know that in <a href="https://hbr.org/2015/07/ace-the-assessment"
+                        style="text-decoration: none;">76%
                         of times</a> a computer process is deciding if you are fit to the job
                     before any person contacts you for an interview?</h5>
- 
-                <h5 style="padding-bottom: 25px;">As technology improves, more companies are implementing Machine Learning Algorithms to evaluate you
+
+                <h5 style="padding-bottom: 25px;">As technology improves, more companies are implementing Machine
+                    Learning Algorithms to evaluate you
                     among thousants of other applicants. </h5>
 
-                <h5><strong>But there is a lack of transparency on what the computer is thinking about you.</strong></h5>
+                <h5><strong>But there is a lack of transparency on what the computer is thinking about you.</strong>
+                </h5>
 
             </div>
 
@@ -159,10 +173,68 @@
 
             <div class="col-md-6 my-auto">
 
-                <h3 style="padding-bottom: 30px;">Wouldn't it be nice if you could see what artificial inteligence sees when they check your CV?</h3>
+                <h3 style="padding-bottom: 30px;">Wouldn't it be nice if you could see what artificial inteligence sees
+                    when they check your Resume?</h3>
+
+                <!-- Button trigger modal -->
+                <button class="custom-button" data-toggle="modal" data-target="#exampleModalCenter">Discover now for
+                    free!</button>
 
 
-                <button class="custom-button">Discover now for free!</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+                        <div class="modal-content" id='textmodal'>
+
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center">
+                                    <span class="circle-small"><i class="fas fa-robot"></i></span>
+                                </h5>
+
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body" style="height: 526px;">
+                                <textarea class="form-control" id="cv-text-1" rows="20" placeholder='paste your resume here... text format' style="max-height: 500px;"></textarea>
+                            </div>
+
+                            <div class="modal-footer">
+
+
+                                <!-- <a href="./dashboard/index.html" style="text-decoration: none;"> -->
+                                <button type="button" class="custom-button-sm" id="analyze">
+                                    Review Resume
+                                </button>
+                                <!-- </a> -->
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="modal-content" id='loadingmodal' style="background: rgba(255, 255, 255, 0.7)">
+
+
+                            <div class="modal-body text-center" style="height: 672px;">
+                                <div class="spinner-border text-primary" role="status" style="width: 250px; height: 250px; border-width: 2em;text-align: center; margin: 190px auto 0 auto;"></div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
 
                 <h5>Take control on how a machine sees you today!</h5>
 
@@ -201,7 +273,7 @@
                         <div class="avatar">
                             <span class="howtoimage"><i class="far fa-copy"></i></span>
                         </div>
-                        <h5 class="font-weight-bold mt-4 mb-3">Copy CV text</h5>
+                        <h5 class="font-weight-bold mt-4 mb-3">Copy Resume text</h5>
                     </div><!-- Grid column -->
 
 
@@ -252,7 +324,8 @@
             <!-- Section heading -->
             <h1 class="h1-responsive my-5" style="padding-top: 30px;">Learn about the Tech that we use</h1>
             <h5 class="grey-text w-responsive mx-auto mb-5">We are using the very best on Machine Learning for
-                natural language and personality insight. On top of this, we have build some custom made adjusts to improve the data flow from our front end to our backend as a
+                natural language and personality insight. On top of this, we have build some custom made adjusts to
+                improve the data flow from our front end to our backend as a
                 service model.
             </h5>
         </section>
@@ -548,7 +621,7 @@
 
 
 
-
+    <script type="text/javascript" src="./BackEnd/app.js"></script>
 
 </body>
 
