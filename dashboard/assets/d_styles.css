@@ -1,6 +1,7 @@
 body{
     padding-bottom: 100px;
     font-family: 'Lato', sans-serif;
+
     background-image: url(../../images/visual-identity/background.JPG);
     background-attachment: fixed;
     background-position: top;
@@ -14,6 +15,7 @@ body{
 .navbar-custom {
     background-color: hsl(233, 81%, 67%);
 }
+
 .navbar-brand{
     color: white;
     font-size: 30px;
