@@ -1,32 +1,33 @@
 # fortsaet
-HR hiring tool to provide insight in to potential employees.
 
 https://costargc.github.io/fortsaet/
 
 
-![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/fortsaet.PNG?raw=true)
+fortsæt - Making Machine Learning Information Transparent. Take control on how a machine sees you!
 
-# scope 
-1. cv page (user data)... submit + enter
 
-2. HR reporting page (IBM watson data and can choose the filter)
+Did you know that in 76% of times a computer process is deciding if you are fit to the job before any person contacts you for an interview? As technology improves, more companies are implementing Machine Learning Algorithms to evaluate you among thousants of other applicants. But there is a lack of transparency on what the computer is thinking about you.
 
-3. We need to connect to IBM watson for Personality Insights https://personality-insights-demo.ng.bluemix.net/ + Natural Language Understanding https://natural-language-understanding-demo.ng.bluemix.net/
 
-4. We want to use firebase to store the data from users
+![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/visual-identity/home1.JPG?raw=true)
 
-5. Show which potential employees were chosen from the HR (initial list + choose the top ones)
+![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/visual-identity/home2.JPG?raw=true)
 
-6. https://costargc.github.io/ something following this initial structure for the user side. (we still need to find out how the HR page will look like).
+![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/visual-identity/home3.JPG?raw=true)
 
-7. Potential employee should upload the information and should be able to view the result on page.
+![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/visual-identity/home4.JPG?raw=true)
 
-Collaborators:
+![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/visual-identity/home5.JPG?raw=true)
 
-Jose Ferreira
+![Screenshot Name](https://github.com/costargc/fortsaet/blob/master/images/visual-identity/home6.JPG?raw=true)
 
-Rodrigo Costa
 
-Brian Ringo
+# Collaborators:
 
-Percy Addo-Yobo 
+    Jose Ferreira
+
+    Rodrigo Costa
+
+    Brian Ringo
+
+    Percy Addo-Yobo 
