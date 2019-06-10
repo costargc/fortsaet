@@ -8,20 +8,35 @@ body{
     background-size: 220px;
 }
 
+.tabs{
+    padding:10px;
+  }
 
 /* START START START home page - navbar */
 .navbar-custom {
     background-color: hsl(233, 81%, 67%);
 }
 
-.navbar-brand{
+#topnav .navbar-brand{
     color: white;
     font-size: 30px;
+    font-weight: 400;
 }
 
-.nav-link{
+#topnav .navbar-brand:hover{
+    color: #203c48;
+}
+
+#topnav .nav-link{
     color: white;
     font-size: 15px;
+    font: Arial;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#topnav .nav-link:hover{
+    color: #203c48;
     text-transform: uppercase;
 }
 
@@ -113,7 +128,7 @@ align-content: center;
     padding:10px 15px;
     border-style:solid;
     border-width:1px;
-    border-color:rgb(255, 0, 0, 0.7);
+    border-color:rgb(255, 0, 0, 0.5);
 } 
 
 .custom-button-sm:hover{
@@ -169,6 +184,15 @@ align-content: center;
 
 
 
+
+
+
+
+
+/* START START START home page - block 4 tabs*/
+
+  
+/* END END END home page - block 4 tabs */
 
 
 

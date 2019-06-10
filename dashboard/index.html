@@ -7,14 +7,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>fortsaet</title>
 
+
   <!-- jquery -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-  <!-- bootstrap -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
   <!-- icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
@@ -26,15 +22,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
 
 
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
   <!-- fortsaet setup -->
   <link rel="stylesheet" href="./assets/d_styles.css">
   <script src="./assets/d_page.js"></script>
-
-
-  <!-- firbase setup -->
-  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-database.js"></script>
-
 
 
 
@@ -91,12 +86,11 @@
 
   </div>
   <!-- nav bar - END -->
+
+
 </header>
 
 <body>
-
-
-
 
   <div class="row mx-auto justify-content-center" id="topbartest">
 
@@ -137,15 +131,6 @@
           </div>
         </div>
 
-        <div class=shadow-custom>
-          <div class="card-custom mb-0">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-            </div>
-          </div>
-        </div>
 
         <div class=shadow-custom>
           <div class="card-custom mb-0">
@@ -241,7 +226,8 @@
         <div class=shadow-custom>
           <div class="card-custom-xl mb-0">
             <div class="card-body">
-                <canvas id="Valuescanvas" style="display: block; width: 460px; height: 500px;" width="460" height="500" class="chartjs-render-monitor"></canvas>
+              <canvas id="Valuescanvas" style="display: block; width: 460px; height: 500px;" width="460" height="500"
+                class="chartjs-render-monitor"></canvas>
             </div>
           </div>
         </div>
@@ -253,7 +239,8 @@
           <div class=shadow-custom>
             <div class="card-custom-xl mb-0">
               <div class="card-body">
-                  <canvas id="Personalitycanvas" style="display: block; width: 460px; height: 500px;" width="460" height="500" class="chartjs-render-monitor"></canvas>
+                <canvas id="Personalitycanvas" style="display: block; width: 460px; height: 500px;" width="460" height="500"
+                  class="chartjs-render-monitor"></canvas>
               </div>
             </div>
           </div>
@@ -265,7 +252,8 @@
           <div class=shadow-custom>
             <div class="card-custom-xl mb-0">
               <div class="card-body">
-                <canvas id="Needscanvas" style="display: block; width: 460px; height: 500px;" width="460" height="500" class="chartjs-render-monitor"></canvas>
+                <canvas id="Needscanvas" style="display: block; width: 460px; height: 500px;" width="460" height="500"
+                  class="chartjs-render-monitor"></canvas>
               </div>
             </div>
           </div>
@@ -279,6 +267,84 @@
     <div class="col-md-1"></div>
 
   </div>
+
+
+
+
+
+
+  <div class="row mx-auto justify-content-center">
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-10">
+
+      <div class=shadow-custom>
+        <div class="card-custom-xl mb-0" style="width: 100%">
+
+          <div class="card-body">
+
+            <ul class="nav nav-tabs">
+
+              <li class='nav-item'>
+                <a class='nav-link active' data-toggle='tab' href='#1'>Emotion</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#A2'>Key Words</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#A3'>Values</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#A4'>Personality</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#A5'>Needs</a>
+              </li>
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+
+              <div class='tab-pane container  in show active' id='A1'>
+                1
+              </div>
+
+              <div class='tab-pane container ' id='A2'>
+                2
+              </div>
+
+              <div class='tab-pane container ' id='A3'>
+                3
+              </div>
+
+              <div class='tab-pane container ' id='A4'>
+                4
+              </div>
+
+              <div class='tab-pane container ' id='A5'>
+                5
+              </div>
+
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="col-md-1"></div>
+
+  </div>
+
+
 
 
 
