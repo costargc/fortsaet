@@ -26,34 +26,98 @@ $(document).ready(function () {
     var color = Chart.helpers.color;
 
 
-// values chart - START
+    // values chart - START
 
-        var ctx = document.getElementById('Valuescanvas').getContext('2d');
-        new Chart(ctx, {
-            type: 'doughnut',
-            data: {
-              labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
-              datasets: [
+    var ctx = document.getElementById('Valuescanvas_d').getContext('2d');
+    new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+            datasets: [
                 {
-                  label: "Population (millions)",
-                  backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-                  data: [2478,5267,734,784,433]
+                    label: "Population (millions)",
+                    backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f", "#e8c3b9", "#c45850"],
+                    data: [2478, 5267, 734, 784, 433]
                 }
-              ]
+            ]
+        },
+        options: {
+            legend: {
+                position: 'none',
             },
-            options: {
-              title: {
+            title: {
+                fontSize: 20,
+                fontFamily: "'Lato', sans-serif",
                 display: true,
-                text: 'Predicted world population (millions) in 2050'
-              }
+                text: 'Values'
             }
-        });
+        }
+    });
 
 
-// values chart - END
+    var ctx = document.getElementById('Valuescanvas').getContext('2d');
+    new Chart(ctx, {
+        type: 'horizontalBar',
+        data: {
+            labels: ['value1', 'value2', 'value3', 'value4', 'value5'],
+            datasets: [{
+                label: 'values',
+
+                borderWidth: 1,
+                backgroundColor: [
+                    color('blue').alpha(0.5).rgbString(),
+                    color('red').alpha(0.5).rgbString(),
+                    color('blue').alpha(0.5).rgbString(),
+                    color('red').alpha(0.5).rgbString(),
+                    color('blue').alpha(0.5).rgbString()
+                ],
+                data: [
+                    0.2,
+                    -0.5,
+                    0.7,
+                    -0.1,
+                    0.1
+                ]
+            }],
+        },
+        options: {
+
+            scales: {
+                xAxes: [{
+
+                    ticks: {
+                        max: 1,
+                        min: -1,
+                    },
+                }],
+
+            },
+            // Elements options apply to all of the options unless overridden in a dataset
+            // In this case, we are setting the border of each horizontal bar to be 2px wide
+            elements: {
+                rectangle: {
+                    borderWidth: 2,
+                }
+            },
+            responsive: true,
+            legend: {
+                position: 'none',
+            },
+            title: {
+                fontSize: 20,
+                fontFamily: "'Lato', sans-serif",
+                display: true,
+                text: 'Values'
+            }
+        }
+    });
 
 
-// Personality chart - START
+
+    // values chart - END
+
+
+    // Personality chart - START
 
 
 
@@ -64,7 +128,7 @@ $(document).ready(function () {
             labels: ['value1', 'value2', 'value3', 'value4', 'value5'],
             datasets: [{
                 label: 'values',
-        
+
                 borderWidth: 1,
                 backgroundColor: [
                     color('blue').alpha(0.5).rgbString(),
@@ -115,10 +179,10 @@ $(document).ready(function () {
     });
 
 
-// Personality chart - END
+    // Personality chart - END
 
 
-// Needs chart - START
+    // Needs chart - START
 
 
 
@@ -129,7 +193,7 @@ $(document).ready(function () {
             labels: ['value1', 'value2', 'value3', 'value4', 'value5', 'value6'],
             datasets: [{
                 label: 'values',
-        
+
                 borderWidth: 1,
                 backgroundColor: [
                     color('blue').alpha(0.5).rgbString(),
@@ -182,7 +246,7 @@ $(document).ready(function () {
     });
 
 
-// values chart - END
+    // values chart - END
 
 
 
