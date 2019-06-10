@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 </head>
 
@@ -19,21 +20,64 @@
 
         value = value1 + value2;
 
+        var xhr = new XMLHttpRequest();
+        // var authorizationBasic = Base64.encode('apikey' + ':' + 'MLb36RSwhGX9lUl9jAVnyXpcWaWNDJJ07PFtCKxC7xyX');
+        username = 'apikey';
+        password = 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8';
+
+        valueA = JSON.stringify({ text: value });
+
 
         $.ajax({
-            type: 'POST',
-            url: 'https://cors-anywhere.herokuapp.com/https://personality-insights-demo.ng.bluemix.net/api/profile/text',
+            // username: 'apikey',
+            // password: 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8',
+            // apikey: 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8',
 
-            dataType: 'json',
+            type: 'POST',
+            url: 'https://gateway.watsonplatform.net/personality-insights/api/v3/profile',
+            // contentType: 'application/json',
+            // data: valueA,
+
             data: {
-                text: value
+                language: 'en',
+                source_type: 'text',
+                accept_language: 'en',
+                include_raw: 'false',
+                consumption_preferences: 'true',
+                text: value,
+            },
+
+            headers: {
+                // contentType: 'application/x-www-form-urlencoded',
+                "Authorization": "Basic " + btoa('apikey:CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8'),
+                // data: valueA
 
             },
+
+
+            // contentType:'application/json',
+
+            // username: 'apikey',
+            // password: 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8',
+
+
+            // Authorization: "Basic " + btoa('apikey:CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8'),
             crossOrigin: true,
             beforeSend: function (xhr) {
+                // xhr.setRequestHeader('apikey', 'MLb36RSwhGX9lUl9jAVnyXpcWaWNDJJ07PFtCKxC7xyX')
+                // xhr.setRequestHeader('Content-Type', 'application/json');
+                // xhr.setRequestHeader("Authorization", "Basic " + btoa(username + ":" + password));
+                // xhr.setRequestHeader('user', 'apikey:CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8');
+                // xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
+                // xhr.setRequestHeader('Accept', 'text/javascript');
+                // xhr.setRequestHeader('Accept', 'application/json');
+                // xhr.setRequestHeader('Accept-Encoding', 'gzip');
+                // xhr.setRequestHeader('Accept-Encoding', 'deflate');
+                // xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
             },
             success: function (body) {
-            console.log(body);
+                console.log(body);
 
             },
             error: function (xhr) { // if error occured

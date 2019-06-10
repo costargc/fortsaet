@@ -43,13 +43,12 @@
 
             <a class="navbar-brand" href="#">forts&#230;t</a>
 
-            <button id="sidebarCollapse" class="navbar-toggler" type="button" data-toggle="collapse"
-                data-target="#navbar-sidebar" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button id="sidebarCollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-sidebar"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><span class="fa fa-bars" aria-hidden="true"></span><span id="menu">MENU</span></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbar-sidebar">
+            <div class=" navbar-collapse" id="navbar-sidebar">
 
                 <div id="dismiss">
                     <i class="fa fa-arrow-left"></i>
@@ -139,8 +138,8 @@
                     deciding about your live
                     and you don't even know it!</h1>
 
-                <h5 style="padding-bottom: 25px;">Did you know that in <a
-                        href="https://hbr.org/2015/07/ace-the-assessment" style="text-decoration: none;">76%
+                <h5 style="padding-bottom: 25px;">Did you know that in <a href="https://hbr.org/2015/07/ace-the-assessment"
+                        style="text-decoration: none;">76%
                         of times</a> a computer process is deciding if you are fit to the job
                     before any person contacts you for an interview?</h5>
 
@@ -184,14 +183,14 @@
 
 
                 <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
+                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+                        <div class="modal-content" id='textmodal'>
 
                             <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">
-                                        <span class="circle-small"><i class="fas fa-robot"></i></span>
+                                <h5 class="modal-title" id="exampleModalLongTitle" style="text-align: center">
+                                    <span class="circle-small"><i class="fas fa-robot"></i></span>
                                 </h5>
 
                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -199,16 +198,35 @@
                                 </button>
                             </div>
 
-                            <div class="modal-body">
-                                    <label for="cv-text-1">Example textarea</label>
-                                    <textarea class="form-control" id="cv-text-1" rows="3"></textarea>
+                            <div class="modal-body" style="height: 526px;">
+                                <textarea class="form-control" id="cv-text-1" rows="20" placeholder='paste your resume here... text format' style="max-height: 500px;"></textarea>
                             </div>
 
                             <div class="modal-footer">
-                                <button type="button" class="custom-button-sm" id="analyze">Send Resume</button>
+
+
+                                <!-- <a href="./dashboard/index.html" style="text-decoration: none;"> -->
+                                <button type="button" class="custom-button-sm" id="analyze">
+                                    Review Resume
+                                </button>
+                                <!-- </a> -->
+
+
                             </div>
 
                         </div>
+
+                        <div class="modal-content" id='loadingmodal' style="background: rgba(255, 255, 255, 0.7)">
+
+
+                            <div class="modal-body text-center" style="height: 672px;">
+                                <div class="spinner-border text-primary" role="status" style="width: 250px; height: 250px; border-width: 2em;text-align: center; margin: 190px auto 0 auto;"></div>
+                            </div>
+
+
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -442,8 +460,8 @@
                 <!-- Grid column -->
                 <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
                     <div class="avatar mx-auto">
-                        <img src="./images/team/team1.jpg" class="rounded-circle z-depth-1" alt="Sample avatar"
-                            width="175px" height="175px">
+                        <img src="./images/team/team1.jpg" class="rounded-circle z-depth-1" alt="Sample avatar" width="175px"
+                            height="175px">
                     </div>
                     <h5 class="font-weight-bold mt-4 mb-3">Rodrigo Costa</h5>
                     <p class="text-uppercase"><strong id="directortitle">Data Science Director</strong></p>
@@ -485,8 +503,8 @@
                 <!-- Grid column -->
                 <div class="col-lg-3 col-md-6 mb-lg-0 mb-5">
                     <div class="avatar mx-auto">
-                        <img src="./images/team/team2.jpg" class="rounded-circle z-depth-1" alt="Sample avatar"
-                            width="175px" height="175px">
+                        <img src="./images/team/team2.jpg" class="rounded-circle z-depth-1" alt="Sample avatar" width="175px"
+                            height="175px">
                     </div>
                     <h5 class="font-weight-bold mt-4 mb-3">Brian Ringo</h5>
                     <p class="text-uppercase"><strong id="directortitle">Business Operations Director</strong></p>
@@ -521,8 +539,8 @@
                 <!-- Grid column -->
                 <div class="col-lg-3 col-md-6 mb-md-0 mb-5">
                     <div class="avatar mx-auto">
-                        <img src="./images/team/team3.png" class="rounded-circle z-depth-1" alt="Sample avatar"
-                            width="175px" height="175px">
+                        <img src="./images/team/team3.png" class="rounded-circle z-depth-1" alt="Sample avatar" width="175px"
+                            height="175px">
                     </div>
                     <h5 class="font-weight-bold mt-4 mb-3">Jose Ferreira</h5>
                     <p class="text-uppercase"><strong id="directortitle">Technology Director</strong></p>
@@ -557,8 +575,8 @@
                 <!-- Grid column -->
                 <div class="col-lg-3 col-md-6">
                     <div class="avatar mx-auto">
-                        <img src="./images/team/team4.jpg" class="rounded-circle z-depth-1" alt="Sample avatar"
-                            width="175px" height="175px">
+                        <img src="./images/team/team4.jpg" class="rounded-circle z-depth-1" alt="Sample avatar" width="175px"
+                            height="175px">
                     </div>
                     <h5 class="font-weight-bold mt-4 mb-3">Percy Addo-Yobo</h5>
                     <p class="text-uppercase"><strong id="directortitle">Managing Director</strong></p>
@@ -603,7 +621,7 @@
 
 
 
-<script type="text/javascript" src="./BackEnd/app.js"></script>
+    <script type="text/javascript" src="./BackEnd/app.js"></script>
 
 </body>
 
