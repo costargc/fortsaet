@@ -17,7 +17,8 @@ $(document).ready(function () {
         var wordCount = str.split(" ").length;
         console.log(wordCount);
         if (wordCount < 200) {
-            return $("#display-error").text("Please enter at least 200 words.");
+            $("#display-error").text("Please enter at least 200 words.");
+            return false;
         }
     }
 
@@ -25,12 +26,7 @@ $(document).ready(function () {
 
         $("#display-error").empty();
 
-        value1 = $("#cv-text-1").val();
-        //console.log(value1);
-        value2 = $("#cv-text-2").val();
-        //console.log(value2);
-        value = value1 + value2;
-        //console.log(value);
+        value = $("#cv-text").val();
         wordCheck(value);
 
         valueA = JSON.stringify({ features: { concepts: {}, entities: {}, keywords: {}, categories: {}, emotion: {}, sentiment: {}, semantic_roles: {}, syntax: { tokens: { lemma: true, part_of_speech: true }, sentences: true } }, text: value });
