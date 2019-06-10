@@ -1,14 +1,12 @@
 body{
     padding-bottom: 100px;
     font-family: 'Lato', sans-serif;
-
     background-image: url(../../images/visual-identity/background.JPG);
-    background-attachment: fixed;
+    background-attachment: local;
     background-position: top;
     background-repeat: repeat-x;
     background-size: 220px;
 }
-
 
 
 /* START START START home page - navbar */
@@ -91,7 +89,7 @@ align-content: center;
     border-style:solid;
     border-width:1px;
     border-color:#6777ef;
-} 
+}
 
 .custom-button:hover{
     background-color:rgba(0,118,229,0);
@@ -103,28 +101,38 @@ align-content: center;
 .custom-button-sm{
     display:inline-block;
     line-height:1;
-    color:#fff;
+    color:#ffff;
     text-align:center;
     transition:all .5s;
     font-size:0.7rem;
     font-weight:600;
     text-transform:uppercase;
     letter-spacing:1.8px;
-    background-color:#6777ef;
+    background-color:rgb(255, 0, 0, 0.7);
     border-radius:50px;
     padding:10px 15px;
     border-style:solid;
     border-width:1px;
-    border-color:#6777ef;
+    border-color:rgb(255, 0, 0, 0.7);
 } 
 
 .custom-button-sm:hover{
     background-color:rgba(0,118,229,0);
-    color:#0076e5;
+    color:rgb(255, 0, 0, 1);
     border-style:solid;
     border-width:1px;
-    border-color:#0076e5;
+    border-color:rgb(255, 0, 0, 1);
 }
+
+
+.card-custom-xl{
+    text-align: center;
+    width: 28rem;
+    height: 30rem;
+    background-color: white; 
+    align-content: center;
+    border: 15px;
+    }
 
 
 
@@ -155,18 +163,6 @@ align-content: center;
     display: inline-block;
     margin: auto;
 }
-
-
-#loadingmodal{
-   display: none;
-   /* display: flex; */
-}
-
- #textmodal{
-    display: flex;
-    /* display: none; */
- }
-
  
 
 /* END END END home page - block 3 */
@@ -178,166 +174,6 @@ align-content: center;
 
 
 
-/* START START START home page - block 5 HOW TO */
-
-.howtoblock{
-    background-color: #203c48;
-    color: white;
-}
-
-.howtoimage{
-    height: 125px;
-    width: 125px;
-    color: white; /* #32638b*/
-    border:2px solid white;/* #32638b*/
-    background-color: rgb(0, 0, 0,0);
-    border-radius: 50%;
-    font-size:75px;
-    display: inline-block;
-    margin: auto;
-}
-
-#hidden_id1, #hidden_id2, #hidden_id3  {
-    opacity: 0;
-}
-
-#animateht1 {
-    opacity: 1;
-    animation: animateht1 1s ease-out;
-  }
-  #animateht2 {
-    opacity: 1;
-    animation: animateht2 1s ease-out;
-  }
-  #animateht3 {
-    opacity: 1;
-    animation: animateht3 1s ease-out;
-  }
-
-
-@keyframes animateht1
-{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@keyframes animateht2
-{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-@keyframes animateht3
-{
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-/* END END END home page - block 5 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* START START START home page - block 4 TECH USED */
-.techUsed{
-    padding: 25px 35px 25px 35px;
-    margin: auto;
-    align-content: center;
-    filter: grayscale(1);
-}
-
-.techUsed:hover{
-    filter: grayscale(0);
-    cursor: pointer;
-}
-/* END END END home page - block 4 */
-
-
-
-
-
-
-
-
-
-
-
-/* START START START home page - block 5 MIDDLE BAR */
-.breakpage{
-    height: 150px;
-    background-color: rgb(115, 210, 254,1); /* For browsers that do not support gradients */
-    background-image: linear-gradient(90deg,rgb(254, 178, 230), #fe9f73); /* Standard */
-
-}
-.circle{
-    height: 125px;
-    width: 125px;
-    color: #203c48; /* #32638b*/
-    border:2px solid #203c48;/* #32638b*/
-    background-color: rgb(0, 0, 0,0);
-    border-radius: 50%;
-    font-size:75px;
-    display: inline-block;
-    margin: auto;
-}
-
-/* END END END home page - block 5 */
-
-
-
-
-
-
-
-/* END END END home page - block 5 TEAM */
-.text-uppercase{
-    margin: 0px 0px 10px 0px;
-    padding: 0px 0px 0px 0px;
-    border: 0px 0px 0px 0px;
-}
-
-#directortitle{
-    margin: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    font-size: 15px;
-}
-
-.fab, .p-2, .list-unstyled{
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    color: black;
-    text-decoration: none;
-}
-.list-unstyled{
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    color: black;
-    text-decoration: none;
-}
-.custom-text:hover{
-    opacity: 0.5;
-}
-
-.columbiaimg{
-    padding: 25px 0px 25px 0px;
-    margin: auto;
-    align-content: center;
-    filter: grayscale(1);
-}
-
-.columbiaimg:hover{
-    filter: grayscale(0);
-    cursor: pointer;
-}
-
-/* END END END home page - block 5 */
 
 
 
