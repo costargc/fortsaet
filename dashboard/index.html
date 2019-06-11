@@ -21,7 +21,6 @@
   <!-- Chart JS-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
 
-
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -43,9 +42,8 @@
 
       <a class="navbar-brand" href="#">forts&#230;t</a>
 
-      <button id="sidebarCollapse" class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbar-sidebar" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button id="sidebarCollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-sidebar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span><span class="fa fa-bars" aria-hidden="true"></span><span id="menu">MENU</span></span>
       </button>
 
@@ -55,7 +53,7 @@
           <i class="fa fa-arrow-left"></i>
         </div>
 
-        <ul class="navbar-nav ml-auto">
+        <!-- <ul class="navbar-nav ml-auto">
 
           <li class="nav-item active">
             <a class="nav-link" href="#home">Home</a>
@@ -80,7 +78,7 @@
           <li class="nav-item">
             <a class="nav-link" href="#team">Our Team</a>
           </li>
-        </ul>
+        </ul> -->
 
       </div>
     </nav>
@@ -101,19 +99,23 @@
 
       <div class="row mx-auto justify-content-center" id="centerthisrow">
 
+
+
         <div class=shadow-custom>
-          <div class="card-custom mb-0"  style="background-color: rgb(248, 179, 148)">
+          <div class="card-custom mb-0" style="background-color: #fff7fc">
             <div class="card-body">
 
               <p class="card-text" style="text-align: center; margin: auto; ">
 
-                <div class='row mx-auto'>
-                  <div class='col-3'>
-                    <span class='img_background' style="color: rgb(250, 85, 9)"><i class="fas fa-user-friends"></i></span>
+                <div class='row mx-auto text-left'>
+                  <div class='col-2'>
+                    <span class='img_background' style="color: rgb(206, 0, 140,0.7)"><i class="fas fa-heart"></i></span>
                   </div>
-                  <div class='col-9 mx-auto' style="padding-top: 20px; font-size: 15px;">
-                    <span class='text-right'>Key Emotion</span>
-                    <span class='text-right font-italic' style="font-size: 25px; color: white; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);">Happiness</span>
+                  <div class='col-10 mx-auto' style="padding-top: 20px; font-size: 15px;">
+                    <span class='text-right' style="font-weight: bold">Key Emotion:</span>
+                    <br><span style="color: rgb(39, 81, 195)"><i class="fas fa-caret-up"></i></span><span class='text-right font-italic'
+                      style="font-size: 18px; color: black; color: rgb(39, 81, 195)" id="top_emotion">Joy</span>
+
                   </div>
                 </div>
 
@@ -124,36 +126,112 @@
 
         </div>
 
-        <div class=shadow-custom>
-          <div class="card-custom mb-0">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-            </div>
-          </div>
-        </div>
 
-        <div class=shadow-custom>
-          <div class="card-custom mb-0">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
-            </div>
-          </div>
-        </div>
+
+
+
+
 
 
         <div class=shadow-custom>
-          <div class="card-custom mb-0">
+          <div class="card-custom mb-0" style="background-color: rgb(255, 247, 243); ">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's
-                content.</p>
+
+              <p class="card-text" style="text-align: center; margin: auto;">
+
+                <div class='row mx-auto text-left'>
+                  <div class='col-2'>
+                    <span class='img_background ' style="color: rgb(255, 85, 7, 0.7); "><i class="fas fa-user-friends"></i></span>
+                  </div>
+                  <div class='col-10 mx-auto' style="padding-top: 20px; font-size: 15px;">
+                    <span class='text-right' style="font-weight: bold">Key Values:</span>
+                    <br><span style="color: rgb(39, 81, 195)"><i class="fas fa-caret-up"></i></span><span class='text-right font-italic'
+                      style="font-size: 18px; color: black; color: rgb(39, 81, 195)" id="top_values">Joy</span>
+                    <br><span style="color: red"><i class="fas fa-caret-down"></i></span><span class='text-right font-italic'
+                      style="font-size: 18px; color: black; color: red " id="bot_values">Joy</span>
+
+                  </div>
+                </div>
+
+              </p>
+
             </div>
           </div>
+
         </div>
+
+
+
+
+
+
+
+
+        <div class=shadow-custom>
+          <div class="card-custom mb-0" style="background-color: #f5fff8">
+            <div class="card-body">
+
+              <p class="card-text" style="text-align: center; margin: auto; ">
+
+                <div class='row mx-auto text-left'>
+                  <div class='col-2'>
+                    <span class='img_background' style="color: rgb(0, 163, 49, 0.7)"><i class="fas fa-handshake"></i></span>
+                  </div>
+                  <div class='col-10 mx-auto' style="padding-top: 20px; font-size: 15px;">
+                    <span class='text-right' style="font-weight: bold">Key Personality:</span>
+                    <br><span style="color: rgb(39, 81, 195)"><i class="fas fa-caret-up"></i></span><span class='text-right font-italic'
+                      style="font-size: 18px; color: black; color: rgb(39, 81, 195) " id="top_persona">Joy</span>
+                    <br><span style="color: red"><i class="fas fa-caret-down"></i></span><span class='text-right font-italic'
+                      style="font-size: 18px; color: black; color: red " id="bot_persona">Joy</span>
+                  </div>
+                </div>
+
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class=shadow-custom>
+          <div class="card-custom mb-0" style="background-color: #f2fcff">
+            <div class="card-body">
+
+              <p class="card-text" style="text-align: center; margin: auto; ">
+
+                <div class='row mx-auto text-left'>
+                  <div class='col-2'>
+                    <span class='img_background' style="color: rgb(0, 154, 219, 0.7)"><i class="fas fa-home"></i></span>
+                  </div>
+                  <div class='col-10 mx-auto' style="padding-top: 20px; font-size: 15px;">
+                    <span class='text-right' style="font-weight: bold">Key Needs:</span>
+                    <br><span style="color: rgb(39, 81, 195)"><i class="fas fa-caret-up"></i></span><span class='text-right font-italic'
+                      style="font-size: 18px; color: black; color: rgb(39, 81, 195) " id="top_need">Joy</span>
+                    <br><span style="color: red"><i class="fas fa-caret-down"></i></span><span class='text-right font-italic'
+                      style="font-size: 18px; color: black; color: red " id="bot_need">Joy</span>
+
+                  </div>
+                </div>
+
+              </p>
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
       </div>
     </div>
 
@@ -220,9 +298,6 @@
                 <a class='nav-link active' data-toggle='tab' href='#emotiondash'>Emotion</a>
               </li>
               <li class='nav-item'>
-                <a class='nav-link ' data-toggle='tab' href='#keyworddash'>Key Words</a>
-              </li>
-              <li class='nav-item'>
                 <a class='nav-link ' data-toggle='tab' href='#valuesdash'>Values</a>
               </li>
               <li class='nav-item'>
@@ -230,6 +305,9 @@
               </li>
               <li class='nav-item'>
                 <a class='nav-link ' data-toggle='tab' href='#needsdash'>Needs</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#keyworddash'>Key Words</a>
               </li>
 
             </ul>
@@ -241,9 +319,36 @@
 
 
               <div class='tab-pane container in show active' id='emotiondash'>
-                <div class="row  mx-auto">
-                  1 asda as das d
+
+
+                <div class="row mx-auto justify-content-center" id="centerthisrow">
+                  <div class=shadow-custom>
+                    <div class="card-custom-xl mb-0">
+                      <div class="card-body">
+                        <canvas id="Emotioncanvas_d" style="display: block; width: 460px; height: 500px;" width="460"
+                          height="500" class="chartjs-render-monitor"></canvas>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="row mx-auto justify-content-center" id="centerthisrow">
+                    <div class=shadow-custom>
+                      <div class="card-custom-xl mb-0">
+                        <div class="card-body">
+                          <canvas id="Emotioncanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                            height="500" class="chartjs-render-monitor"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
                 </div>
+
               </div>
 
 
@@ -260,8 +365,7 @@
                   <div class="col-md-10">
                     <p style="align-content: center; text-align: center">
                       <a class="custom-button-sm" data-toggle="collapse" href="#collapseExample" role="button"
-                        aria-expanded="false" aria-controls="collapseExample"
-                        style="    text-decoration: none; align-content: center">
+                        aria-expanded="false" aria-controls="collapseExample" style="    text-decoration: none; align-content: center">
                         Check key words associated with you
                       </a>
 
@@ -340,7 +444,7 @@
                   <div class=shadow-custom>
                     <div class="card-custom-xl mb-0">
                       <div class="card-body">
-                        <canvas id="Valuescanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                        <canvas id="Personalitycanvas_d" style="display: block; width: 460px; height: 500px;" width="460"
                           height="500" class="chartjs-render-monitor"></canvas>
                       </div>
                     </div>
@@ -353,8 +457,8 @@
                     <div class=shadow-custom>
                       <div class="card-custom-xl mb-0">
                         <div class="card-body">
-                          <canvas id="Personalitycanvas" style="display: block; width: 460px; height: 500px;"
-                            width="460" height="500" class="chartjs-render-monitor"></canvas>
+                          <canvas id="Personalitycanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                            height="500" class="chartjs-render-monitor"></canvas>
                         </div>
                       </div>
                     </div>
@@ -380,7 +484,7 @@
                   <div class=shadow-custom>
                     <div class="card-custom-xl mb-0">
                       <div class="card-body">
-                        <canvas id="Personalitycanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                        <canvas id="Needscanvas_d" style="display: block; width: 460px; height: 500px;" width="460"
                           height="500" class="chartjs-render-monitor"></canvas>
                       </div>
                     </div>
