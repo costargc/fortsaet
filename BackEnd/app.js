@@ -24,23 +24,23 @@ $(document).ready(function () {
     $("#analyze").on("click", function () {
         var natural_language;
         var personality;
-        
+
         $('#loadingmodal').css('display', 'flex');
         $('#textmodal').css('display', 'none');
 
-        var $captcha = $('#recaptcha'),
-            response = grecaptcha.getResponse();
+        // var $captcha = $('#recaptcha'),
+        //     response = grecaptcha.getResponse();
 
-        if (response.length === 0) {
-            $('.msg-error').text("reCAPTCHA is mandatory");
-            if (!$captcha.hasClass("error")) {
-                $captcha.addClass("error");
-            }
-        } else {
-            $('.msg-error').text('');
-            $captcha.removeClass("error");
-            alert('reCAPTCHA marked');
-        }
+        // if (response.length === 0) {
+        //     $('.msg-error').text("reCAPTCHA is mandatory");
+        //     if (!$captcha.hasClass("error")) {
+        //         $captcha.addClass("error");
+        //     }
+        // } else {
+        //     $('.msg-error').text('');
+        //     $captcha.removeClass("error");
+        //     alert('reCAPTCHA marked');
+        // }
 
 
 
