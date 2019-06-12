@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>fortsaet</title>
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+
+  <!-- Chart JS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+
+
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <!-- fortsaet setup -->
+  <link rel="stylesheet" href="./assets/d_styles.css">
+  <script src="./assets/d_page.js"></script>
+
+
+
+</head>
+
+<header>
+  <!-- nav bar - START -->
+  <div class="top" id="topnav">
+
+    <nav class="navbar navbar-expand-lg navbar-custom">
+
+      <a class="navbar-brand" href="#">forts&#230;t</a>
+
+      <button id="sidebarCollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-sidebar"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span><span class="fa fa-bars" aria-hidden="true"></span><span id="menu">MENU</span></span>
+      </button>
+
+      <div class=" navbar-collapse" id="navbar-sidebar">
+
+        <div id="dismiss">
+          <i class="fa fa-arrow-left"></i>
+        </div>
+
+        <ul class="navbar-nav ml-auto">
+
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#case">Case Study</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#app">Test App</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#howto">How to use</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#tech">Technology</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Our Team</a>
+          </li>
+        </ul>
+
+      </div>
+    </nav>
+
+  </div>
+  <!-- nav bar - END -->
+
+
+</header>
+
+<body>
+
+  <div class="row mx-auto justify-content-center" id="topbartest">
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-10">
+
+      <div class="row mx-auto justify-content-center" id="centerthisrow">
+
+        <div class=shadow-custom>
+          <div class="card-custom mb-0">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class=shadow-custom>
+          <div class="card-custom mb-0">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class=shadow-custom>
+          <div class="card-custom mb-0">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class=shadow-custom>
+          <div class="card-custom mb-0">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                card's
+                content.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-1"></div>
+
+  </div>
+
+
+  <div class="row mx-auto mt-2">
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-8">
+      <!-- Pretitle -->
+      <h6 class="header-pretitle">
+        Overview
+      </h6>
+
+      <!-- Title -->
+      <h1 class="header-title">
+        Dashboard
+      </h1>
+
+
+    </div>
+
+    <div class="col-md-1">
+
+
+    </div>
+
+    <div class="col-md-1"></div>
+
+
+  </div> <!-- / .row -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row mx-auto justify-content-center">
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-10">
+
+      <div class=shadow-custom>
+        <div class="card-custom-xl mb-0" style="width: 100%; height: 100%; min-height: 550px;">
+
+          <div class="card-body">
+
+            <ul class="nav nav-tabs">
+
+              <li class='nav-item'>
+                <a class='nav-link active' data-toggle='tab' href='#emotiondash'>Emotion</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#keyworddash'>Key Words</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#valuesdash'>Values</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#personaldash'>Personality</a>
+              </li>
+              <li class='nav-item'>
+                <a class='nav-link ' data-toggle='tab' href='#needsdash'>Needs</a>
+              </li>
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+
+
+
+
+              <div class='tab-pane container in show active' id='emotiondash'>
+                <div class="row  mx-auto">
+                  1 asda as das d
+                </div>
+              </div>
+
+
+
+
+
+
+              <div class='tab-pane container' id='keyworddash'>
+
+                <div class="row  mx-auto">
+
+                  <div class="col-md-1"></div>
+
+                  <div class="col-md-10">
+                    <p style="align-content: center; text-align: center">
+                      <a class="custom-button-sm" data-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample" style="    text-decoration: none; align-content: center">
+                        Check key words associated with you
+                      </a>
+
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                      <div class="card card-body">
+                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                        Nihil anim
+                        keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                      </div>
+                    </div>
+
+                  </div>
+
+                  <div class="col-md-1"></div>
+
+                </div>
+
+              </div>
+
+
+
+
+
+
+              <div class='tab-pane container ' id='valuesdash'>
+
+
+
+
+                <div class="row mx-auto justify-content-center" id="centerthisrow">
+                  <div class=shadow-custom>
+                    <div class="card-custom-xl mb-0">
+                      <div class="card-body">
+                        <canvas id="Valuescanvas_d" style="display: block; width: 460px; height: 500px;" width="460"
+                          height="500" class="chartjs-render-monitor"></canvas>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="row mx-auto justify-content-center" id="centerthisrow">
+                    <div class=shadow-custom>
+                      <div class="card-custom-xl mb-0">
+                        <div class="card-body">
+                          <canvas id="Valuescanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                            height="500" class="chartjs-render-monitor"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+
+
+
+              </div>
+
+
+
+
+
+
+
+              <div class='tab-pane container ' id='personaldash'>
+
+
+
+
+                <div class="row mx-auto justify-content-center" id="centerthisrow">
+                  <div class=shadow-custom>
+                    <div class="card-custom-xl mb-0">
+                      <div class="card-body">
+                        <canvas id="Valuescanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                          height="500" class="chartjs-render-monitor"></canvas>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="row mx-auto justify-content-center" id="centerthisrow">
+                    <div class=shadow-custom>
+                      <div class="card-custom-xl mb-0">
+                        <div class="card-body">
+                          <canvas id="Personalitycanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                            height="500" class="chartjs-render-monitor"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                </div>
+
+
+              </div>
+
+
+
+
+
+              <div class='tab-pane container ' id='needsdash'>
+
+
+
+
+                <div class="row mx-auto justify-content-center" id="centerthisrow">
+                  <div class=shadow-custom>
+                    <div class="card-custom-xl mb-0">
+                      <div class="card-body">
+                        <canvas id="Personalitycanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                          height="500" class="chartjs-render-monitor"></canvas>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                  <div class="row mx-auto justify-content-center" id="centerthisrow">
+                    <div class=shadow-custom>
+                      <div class="card-custom-xl mb-0">
+                        <div class="card-body">
+                          <canvas id="Needscanvas" style="display: block; width: 460px; height: 500px;" width="460"
+                            height="500" class="chartjs-render-monitor"></canvas>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+
+
+
+
+
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+ 
+
+    </div>
+
+    <div class="col-md-1"></div>
+
+
+</body>
+
+</html>

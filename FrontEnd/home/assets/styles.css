@@ -186,17 +186,29 @@ body{
 }
 
 .circle-small{
-    height: 55px;
-    width: 55px;
+    height: 37px;
+    width: 37px;
     color: #203c48; /* #32638b*/
     border:2px solid #203c48;/* #32638b*/
     background-color: rgb(0, 0, 0,0);
     border-radius: 50%;
-    font-size:30px;
+    font-size:20px;
     display: inline-block;
     margin: auto;
 }
 
+
+#loadingmodal{
+   display: none;
+   /* display: flex; */
+}
+
+ #textmodal{
+    display: flex;
+    /* display: none; */
+ }
+
+ 
 
 /* END END END home page - block 3 */
 
