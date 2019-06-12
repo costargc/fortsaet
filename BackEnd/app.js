@@ -17,6 +17,22 @@ $(document).ready(function () {
         $('#loadingmodal').css('display', 'flex');
         $('#textmodal').css('display', 'none');
 
+        // var $captcha = $('#recaptcha'),
+        //     response = grecaptcha.getResponse();
+
+        // if (response.length === 0) {
+        //     $('.msg-error').text("reCAPTCHA is mandatory");
+        //     if (!$captcha.hasClass("error")) {
+        //         $captcha.addClass("error");
+        //     }
+        // } else {
+        //     $('.msg-error').text('');
+        //     $captcha.removeClass("error");
+        //     alert('reCAPTCHA marked');
+        // }
+
+
+
 
         value = $("#cv-text-1").val();
 
