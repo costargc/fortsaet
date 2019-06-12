@@ -29,13 +29,20 @@ $(document).ready(function () {
     console.log(single)
 
     //To remove double words
-    // Take the following string
+    
 //First to stringify every single word in the cv text 
+var obj = { value };
+var myJSON = JSON.stringify(obj);
+
+//Then to remove double words
+
+var uniqueList=string.split(',').filter(function(item,i,allItems){
+    return i==allItems.indexOf(item);
+}).join(',');
+
+$('#output').append(uniqueList);
 
 
-
-// Find the duplicates
-// Remove the duplicate, leaving a single occurance of the word in place
 
 
 
