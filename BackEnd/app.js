@@ -21,6 +21,24 @@ $(document).ready(function () {
         }
     }
 
+    //To remove double spaces
+    var regex = /  /gi
+    console.log(value)
+
+    var single = value.replace(regex, ' ')
+    console.log(single)
+
+    //To remove double words
+    // Take the following string
+//First to stringify every single word in the cv text 
+
+
+
+// Find the duplicates
+// Remove the duplicate, leaving a single occurance of the word in place
+
+
+
     $("#analyze").on("click", function () {
 
         value1 = $("#cv-text-1").val();
