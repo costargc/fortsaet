@@ -1,27 +1,16 @@
 $(document).ready(function () {
-
-    // Your web app's Firebase configuration
-    var firebaseConfig = {
-        apiKey: "AIzaSyBOUGxfInRpMOwYNv7zTOeht_H7mDSEdF4",
-        authDomain: "forsaet-0.firebaseapp.com",
-        databaseURL: "https://forsaet-0.firebaseio.com",
-        projectId: "forsaet-0",
-        storageBucket: "",
-        messagingSenderId: "260809973088",
-        appId: "1:260809973088:web:fcf11adadec4d424"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-
+    
     function wordCheck(str) {
         var wordCount = str.split(" ").length;
         console.log(wordCount);
         if (wordCount < 200) {
-            return $("#display-error").text("Please enter at least 200 words.");
+            $("#display-error").text("Please enter at least 200 words.");
         }
     }
 
     $("#analyze").on("click", function () {
+        event.preventDefault();
+        
         var natural_language;
         var personality;
 
@@ -45,7 +34,7 @@ $(document).ready(function () {
 
 
 
-        value = $("#cv-text-1").val().trim();
+        value = $("#cv-text-1").val();
 
         wordCheck(value);
 
@@ -115,7 +104,4 @@ $(document).ready(function () {
 
 
     })
-
-
-
 });
