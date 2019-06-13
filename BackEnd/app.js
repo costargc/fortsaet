@@ -8,6 +8,31 @@ $(document).ready(function () {
         }
     }
 
+    //To remove double spaces
+    var regex = /  /gi
+    console.log(value)
+
+    var single = value.replace(regex, ' ')
+    console.log(single)
+
+    //To remove double words
+    
+//First to stringify every single word in the cv text 
+var obj = { value };
+var myJSON = JSON.stringify(obj);
+
+//Then to remove double words
+
+var uniqueList=string.split(',').filter(function(item,i,allItems){
+    return i==allItems.indexOf(item);
+}).join(',');
+
+$('#output').append(uniqueList);
+
+
+
+
+
     $("#analyze").on("click", function () {
         event.preventDefault();
         
