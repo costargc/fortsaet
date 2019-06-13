@@ -1,27 +1,43 @@
 $(document).ready(function () {
 
-    var words = [
-        { text: "Lorem", weight: 13 },
-        { text: "Ipsum", weight: 10.5 },
-        { text: "Dolor", weight: 9.4 },
-        { text: "Sit", weight: 8 },
-        { text: "Amet", weight: 6.2 },
-        { text: "Consectetur", weight: 5 },
-        { text: "Adipiscing", weight: 5 },
-        /* ... */
-    ];
-
-    $(window).bind('resize', function () {
-        // $("#mydiv").load(location.href + " #word_chart");
-        location.reload();
-    });
-
-
-    $('#word_chart').jQCloud(words);
-
-
     naturalobj = JSON.parse(sessionStorage.getItem("natural_language"));
     // console.log(naturalobj.results.emotion.document.emotion);
+
+    words = [];
+    obj = [];
+
+    for (var i = 0; i < Math.min(naturalobj.results.concepts.length, 10); i++) {
+
+        obj[i] = {
+            text: naturalobj.results.concepts[i].text,
+            weight: naturalobj.results.concepts[i].relevance * 20
+        }
+        words.push(obj[i])
+    }
+
+    obj = [];
+    for (var i = 0; i < Math.min(naturalobj.results.entities.length, 10); i++) {
+
+        obj[i] = {
+            text: naturalobj.results.entities[i].text,
+            weight: naturalobj.results.entities[i].relevance * 20
+        }
+        words.push(obj[i])
+    }
+
+    obj = [];
+    for (var i = 0; i < Math.min(naturalobj.results.keywords.length, 10); i++) {
+
+        obj[i] = {
+            text: naturalobj.results.keywords[i].text,
+            weight: naturalobj.results.keywords[i].relevance * 20
+        }
+        words.push(obj[i])
+    }
+
+    $('#word_chart').jQCloud(words, {
+        autoResize: true
+    });
 
     emotions_label = Object.keys(naturalobj.results.emotion.document.emotion);
     emotions_values = Object.values(naturalobj.results.emotion.document.emotion);
