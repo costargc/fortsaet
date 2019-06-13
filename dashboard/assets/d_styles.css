@@ -202,7 +202,10 @@ align-content: center;
 
 
 /* START START START home page - block 4 tabs*/
-
+#word_chart{
+    width: 100%; 
+    height: 350px;
+}
   
 /* END END END home page - block 4 tabs */
 
