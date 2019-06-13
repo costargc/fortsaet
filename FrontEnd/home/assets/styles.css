@@ -4,6 +4,8 @@ body{
 }
 
 
+
+
 /* START START START home page - navbar */
 .navbar-custom {
     background-color: rgb(0, 0, 0, 0.5);
@@ -208,6 +210,9 @@ body{
     /* display: none; */
  }
 
+ .msg-error {
+    color: red;
+}
  
 
 /* END END END home page - block 3 */
