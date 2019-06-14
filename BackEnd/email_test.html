@@ -11,31 +11,76 @@
 
 <body>
 
+    <button id="runemail">click me</button>
+
     <script>
 
+        $('#runemail').on("click", function () {
 
-        $.ajax({
-            type: "POST",
-            url: 'https://cors-anywhere.herokuapp.com/https://api.mailgun.net/v3/www.fortsaet.com/messages',
-            headers: {
-                "Authorization": "Basic " + btoa('api:xxxxxxxxxxxxxxxxxxxxxx'),
-                'access-control-allow-credentials': true,
-            },
-            data: {
-                from: 'Awesome AI Team <noreply@fortsaet.com>',
-                to: 'percya@fortsaet.com',
-                // to: 'jose@fortsaet.com',
-                subject: 'Hello',
-                text: 'Welcome to the team!'
+            $.ajax({
+                type: "POST",
+                url: 'https://cors-anywhere.herokuapp.com/https://api.mailgun.net/v3/fortsaet.com/messages',
+                headers: {
+                    "Authorization": "Basic " + btoa('api:' + grabmykey()),
+                    'access-control-allow-credentials': true,
+                },
+                data: {
+                    from: 'Awesome AI Team <noreply@fortsaet.com>',
+                    to: ['jose@fortsaet.com','percya@fortsaet.com','costa@fortsaet.com','brian@fortsaet.com'],
+                    // to: 'costa@fortsaet.com',
+                    subject: 'Hello',
+                    text: 'Welcome to the team!'
+                }
+            }).then(
+                response => {
+                    console.log(response)
+                },
+                reject => {
+                    console.log(reject)
+                }
+            )
+
+            function grabmykey() {
+                p1 = "UOI";
+                p2 = "N885NN15K5K45O1P474O023N8N8O5PLO";
+
+                k1 = encrypt(p1, -10).toLowerCase();
+                k2 = encrypt(p2, -10).toLowerCase();
+
+                return k1 + "-" + k2
+
+            };
+
+
+
+            function encrypt(msg, key) {
+                var encMsg = "";
+
+                for (var i = 0; i < msg.length; i++) {
+                    var code = msg.charCodeAt(i);
+
+                    // Encrypt only letters in 'A' ... 'Z' interval
+                    if (code >= 65 && code <= 65 + 26 - 1) {
+                        code -= 65;
+                        code = mod(code + key, 26);
+                        code += 65;
+                    }
+
+                    encMsg += String.fromCharCode(code);
+                }
+
+                return encMsg;
             }
-        }).then(
-            response => {
-                console.log(response)
-            },
-            reject => {
-                console.log(reject)
+
+            function mod(n, p) {
+                if (n < 0)
+                    n = p - Math.abs(n) % p;
+
+                return n % p;
             }
-        )
+
+
+        });
 
 
     </script>
