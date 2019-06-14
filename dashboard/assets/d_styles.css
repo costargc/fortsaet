@@ -68,7 +68,7 @@ width: 18rem;
 background-color: white; 
 align-content: center;
 border: 1px;
-height: 150px;
+height: 140px;
 }
 
 .shadow-custom{
@@ -154,8 +154,8 @@ align-content: center;
 .card-custom-xl{
     text-align: center;
     display: block;
-    width: 400px;
-    height: 26rem;
+    width: 340px;
+    height: 21rem;
     background-color: white; 
     align-content: center;
     border: 15px;
