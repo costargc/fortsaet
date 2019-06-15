@@ -3,8 +3,8 @@ $(document).ready(function () {
     function wordCheck(str) {
         var wordCount = str.split(" ").length;
         console.log(wordCount);
-        if (wordCount < 200) {
-            $("#display-error").text("Please enter at least 200 words.");
+        if (wordCount < 100) {
+            $("#display-error").text("Please enter at least 100 words.");
         }
     }
 
