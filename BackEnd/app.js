@@ -1,4 +1,24 @@
 $(document).ready(function () {
+
+    var firebaseConfig = {
+        apiKey: "AIzaSyBOUGxfInRpMOwYNv7zTOeht_H7mDSEdF4",
+        authDomain: "forsaet-0.firebaseapp.com",
+        databaseURL: "https://forsaet-0.firebaseio.com",
+        projectId: "forsaet-0",
+        storageBucket: "",
+        messagingSenderId: "260809973088",
+        appId: "1:260809973088:web:fcf11adadec4d424"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+
+    database.ref().on("value", function (snapshot) {
+        console.log(snapshot.numChildren());
+    }, function (errorObject) {
+        console.log("The read failed: " + errorObject.code);
+    });
+
     
     function wordCheck(str) {
         var wordCount = str.split(" ").length;
@@ -54,6 +74,7 @@ $(document).ready(function () {
 
             crossOrigin: true,
             beforeSend: function (xhr) {
+                Origin: 'https://natural-language-understanding-demo.ng.bluemix.net'
             },
             success: function (body) {
                 // console.log(body);
