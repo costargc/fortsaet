@@ -1,5 +1,25 @@
 $(document).ready(function () {
     
+    var firebaseConfig = {
+        apiKey: grabmykey(),
+        authDomain: "forsaet-0.firebaseapp.com",
+        databaseURL: "https://forsaet-0.firebaseio.com",
+        projectId: "forsaet-0",
+        storageBucket: "",
+        messagingSenderId: "260809973088",
+        appId: "1:260809973088:web:fcf11adadec4d424"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    var database = firebase.database();
+
+    database.ref().on("value", function (snapshot) {
+        console.log(snapshot.numChildren());
+    }, function (errorObject) {
+        console.log("The read failed: " + errorObject.code);
+    });
+
+    
     function wordCheck(str) {
         var wordCount = str.split(" ").length;
         console.log(wordCount);
@@ -54,6 +74,7 @@ $(document).ready(function () {
 
             crossOrigin: true,
             beforeSend: function (xhr) {
+                Origin: 'https://natural-language-understanding-demo.ng.bluemix.net'
             },
             success: function (body) {
                 // console.log(body);
@@ -104,4 +125,45 @@ $(document).ready(function () {
 
 
     })
+
+
+    function grabmykey() {
+        p1 = "AIzaSyBOUGxfIn";
+        p2 = "RpMOwYNv7zTOeht_H7mDSEdF4";
+    
+        p1 = encrypt(p1, -10);
+        p2 = encrypt(p2, -10);
+    
+        return p1 + "" + p2
+    
+    };
+    
+    function encrypt(msg, key) {
+        var encMsg = "";
+    
+        for (var i = 0; i < msg.length; i++) {
+            var code = msg.charCodeAt(i);
+    
+            // Encrypt only letters in 'A' ... 'Z' interval
+            if (code >= 65 && code <= 65 + 26 - 1) {
+                code -= 65;
+                code = mod(code + key, 26);
+                code += 65;
+            }
+    
+            encMsg += String.fromCharCode(code);
+        }
+    
+        return encMsg;
+    }
+    
+    function mod(n, p) {
+        if (n < 0)
+            n = p - Math.abs(n) % p;
+    
+        return n % p;
+    }
+    
+
+
 });
