@@ -70,7 +70,7 @@ body {
 .parallax {
     /* The image used */
     background-image: url(../../../images/visual-identity/cover.jpeg);
-    height: 700px;
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -211,11 +211,6 @@ body {
     border-radius: 25px;
     background-color: white;
     position: relative;
-}
-
-#loadingmodal {
-    display: none;
-    /* display: flex; */
 }
 
 #textmodal {
