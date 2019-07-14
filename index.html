@@ -169,6 +169,7 @@
 
 
     <!-- START new block (test app)-->
+    <!-- START new block (test app)-->
     <div id="app"></div>
     <div class="gradient-content text-center mt-5">
 
@@ -182,8 +183,22 @@
                     when they check your Resume?</h3>
 
                 <!-- Button trigger modal -->
-                <button class="custom-button" data-toggle="modal" data-target="#exampleModalCenter">Discover now for
-                    free!</button>
+                <!-- <button class="custom-button" data-toggle="modal" data-target="#exampleModalCenter">Discover now for
+                        free!</button> -->
+
+                <div id="drop-zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);"
+                    ondragleave="dragLeaveHandler(event)">
+                    <p>Drag and drop a PDF of your resume here to see how you stack up!</p>
+
+                    <div class="modal-content" id='loadingmodal' style="background: rgba(255, 255, 255, 0.7)">
+                        <div class="modal-body text-center">
+                            <div class="spinner-border text-primary" role="status"
+                                style="width: 200px; height: 200px; border-width: 2em;text-align: center; margin: 75px auto 0 auto;">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
 
 
 
@@ -227,21 +242,12 @@
 
                         </div>
 
-                        <div class="modal-content" id='loadingmodal' style="background: rgba(255, 255, 255, 0.7)">
 
-
-                            <div class="modal-body text-center" style="height: 672px;">
-                                <div class="spinner-border text-primary" role="status"
-                                    style="width: 250px; height: 250px; border-width: 2em;text-align: center; margin: 190px auto 0 auto;">
-                                </div>
-                            </div>
-
-
-                        </div>
 
 
                     </div>
                 </div>
+
 
 
 
@@ -697,6 +703,8 @@
 
 
     <script type="text/javascript" src="./BackEnd/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.2.2/pdf.js"></script>
+    <script src="./BackEnd/pdf-parser.js"></script>
 
 </body>
 
