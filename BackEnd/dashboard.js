@@ -16,8 +16,8 @@ $(document).ready(function () {
     var database = firebase.database();
     var personalityResults = JSON.parse(sessionStorage.getItem('personality'));
     var natLanguageResults = JSON.parse(sessionStorage.getItem('natural_language'));
-    console.log(personalityResults);
-    console.log(natLanguageResults);
+    console.log("personality results: ", personalityResults);
+    console.log("natural lang results: ", natLanguageResults);
     var persNeeds = personalityResults.needs;
 
     persNeeds.sort(function (a, b) {

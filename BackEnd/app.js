@@ -37,23 +37,6 @@ function analyzeResume(content) {
     $('#loadingmodal').css('display', 'flex');
     $('#textmodal').css('display', 'none');
 
-    // var $captcha = $('#recaptcha'),
-    //     response = grecaptcha.getResponse();
-
-    // if (response.length === 0) {
-    //     $('.msg-error').text("reCAPTCHA is mandatory");
-    //     if (!$captcha.hasClass("error")) {
-    //         $captcha.addClass("error");
-    //     }
-    // } else {
-    //     $('.msg-error').text('');
-    //     $captcha.removeClass("error");
-    //     alert('reCAPTCHA marked');
-    // }
-
-
-
-
     value = content;
 
     wordCheck(value);
@@ -80,6 +63,7 @@ function analyzeResume(content) {
             // console.log(body);
             natural_language = body;
             sessionStorage.setItem('natural_language', JSON.stringify(natural_language));
+            console.log(JSON.stringify(natural_language))
             callPersonality();
         },
         error: function (xhr) {
@@ -91,6 +75,7 @@ function analyzeResume(content) {
 
     //Call to Personality Insights
     function callPersonality() {
+        console.log("value", value)
         $.ajax({
             type: 'POST',
             url: 'https://cors-anywhere.herokuapp.com/https://personality-insights-demo.ng.bluemix.net/api/profile/text',
@@ -107,8 +92,7 @@ function analyzeResume(content) {
                 personality = body;
                 sessionStorage.setItem('personality', JSON.stringify(personality));
 
-                console.log(JSON.parse(sessionStorage.getItem('natural_language')));
-                console.log(JSON.parse(sessionStorage.getItem('personality')));
+
                 // change to dashboard page
                 window.open('./dashboard/index.html', '_self');
 

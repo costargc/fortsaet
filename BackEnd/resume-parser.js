@@ -1,3 +1,13 @@
+//Handles the paste logic
+function pasteHandler(event) {
+    event.preventDefault();
+    // $("#instructions").empty();
+    var text = (event.originalEvent || event.clipboardData.getData('text/plain'));
+    // insert text manually
+    analyzeResume(text);
+
+}
+
 //Handles the drag & drop logic
 function dropHandler(ev) {
     console.log('File(s) dropped');
