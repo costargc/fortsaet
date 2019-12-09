@@ -8,9 +8,14 @@ body{
     background-size: contain 150px;
 }
 
+
 .tabs{
     padding:10px;
   }
+
+#displayresults .row:hover {
+    background-color: rgb(242, 241, 251,0.5)!important;
+}
 
 /* START START START home page - navbar */
 .navbar-custom {
