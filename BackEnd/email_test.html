@@ -15,18 +15,21 @@
 
     <script>
 
+
         $('#runemail').on("click", function () {
+
+
 
             $.ajax({
                 type: "POST",
-                url: 'https://cors-anywhere.herokuapp.com/https://api.mailgun.net/v3/fortsaet.com/messages',
+                url: 'https://cors-anywhere.herokuapp.com/https://api.mailgun.net/v3/upself.com/messages',
                 headers: {
                     "Authorization": "Basic " + btoa('api:' + grabmykey()),
                     'access-control-allow-credentials': true,
                 },
                 data: {
-                    from: 'Awesome AI Team <noreply@fortsaet.com>',
-                    to: ['jose@fortsaet.com','percya@fortsaet.com','costa@fortsaet.com','brian@fortsaet.com'],
+                    from: 'Awesome Team <noreply@upself.com>',
+                    to: ['costa@upself.com', 'matt@upself.com', 'emily@upself.com', 'esther@upself.com'],
                     // to: 'costa@fortsaet.com',
                     subject: 'Hello',
                     text: 'Welcome to the team!'

@@ -18,6 +18,7 @@ $(document).ready(function () {
     var natLanguageResults = JSON.parse(sessionStorage.getItem('natural_language'));
     console.log(personalityResults);
     console.log(natLanguageResults);
+    
     var persNeeds = personalityResults.needs;
 
     persNeeds.sort(function (a, b) {

@@ -23,15 +23,15 @@
         var xhr = new XMLHttpRequest();
         // var authorizationBasic = Base64.encode('apikey' + ':' + 'MLb36RSwhGX9lUl9jAVnyXpcWaWNDJJ07PFtCKxC7xyX');
         username = 'apikey';
-        password = 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8';
+        password = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
 
         valueA = JSON.stringify({ text: value });
 
 
         $.ajax({
             // username: 'apikey',
-            // password: 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8',
-            // apikey: 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8',
+            // password: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
+            // apikey: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
 
             type: 'POST',
             url: 'https://gateway.watsonplatform.net/personality-insights/api/v3/profile',
@@ -49,7 +49,7 @@
 
             headers: {
                 // contentType: 'application/x-www-form-urlencoded',
-                "Authorization": "Basic " + btoa('apikey:CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8'),
+                "Authorization": "Basic " + btoa('apikey:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'),
                 // data: valueA
 
             },
@@ -58,16 +58,16 @@
             // contentType:'application/json',
 
             // username: 'apikey',
-            // password: 'CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8',
+            // password: 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX',
 
 
-            // Authorization: "Basic " + btoa('apikey:CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8'),
+            // Authorization: "Basic " + btoa('apikey:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'),
             crossOrigin: true,
             beforeSend: function (xhr) {
-                // xhr.setRequestHeader('apikey', 'MLb36RSwhGX9lUl9jAVnyXpcWaWNDJJ07PFtCKxC7xyX')
+                // xhr.setRequestHeader('apikey', 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX')
                 // xhr.setRequestHeader('Content-Type', 'application/json');
                 // xhr.setRequestHeader("Authorization", "Basic " + btoa(username + ":" + password));
-                // xhr.setRequestHeader('user', 'apikey:CYm89ZJd1wyZaSdSrUYhBsbPcxLiGPMeLJJm6iwTSsM8');
+                // xhr.setRequestHeader('user', 'apikey:XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX');
                 // xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest');
                 // xhr.setRequestHeader('Accept', 'text/javascript');
                 // xhr.setRequestHeader('Accept', 'application/json');
