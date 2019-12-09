@@ -16,13 +16,21 @@ $(document).ready(function () {
     }
 
     obj = [];
-    for (var i = 0; i < Math.min(naturalobj.results.entities.length, 10); i++) {
 
-        obj[i] = {
-            text: naturalobj.results.entities[i].text,
-            weight: naturalobj.results.entities[i].relevance * 20
+    var jobTitles = [];
+    for (var i = 0; i < naturalobj.results.entities.length; i++) {
+        if (naturalobj.results.entities[i].type === "JobTitle") {
+            console.log("job: ", naturalobj.results.entities[i].text);
+            jobTitles.push(naturalobj.results.entities[i].text);
         }
-        words.push(obj[i])
+        if (i < 10) {
+            obj[i] = {
+                text: naturalobj.results.entities[i].text,
+                weight: naturalobj.results.entities[i].relevance * 20
+            }
+            words.push(obj[i])
+
+        }
     }
 
     obj = [];
@@ -485,6 +493,82 @@ $(document).ready(function () {
 
     // emotion chart - END
 
+
+    //indeed Job start - END
+
+    function queryIndeed(jobTitles) {
+        //first wait on the response from the IPdata API call...
+        getUserInfo(function (res) {
+            var location = res.city + ', ' + res.state;
+            console.log(location);
+            //ip address of end user       
+            var userIP = res.ip;
+            console.log(userIP);
+            //The browser of the end user who will view job results from your website. You can obtain this parameter using the User-Agent HTTP request header from the end user.
+            var userAgent = navigator.userAgent;;
+            //Publisher ID given to you by indeed
+            var publisherID = 4548195452860771;
+
+            //Now make the calls to the indeed API for each jobtitle returned from Watson API
+            var jobDisplay = [];
+            jobTitles.forEach(function (jobTitle) {
+                //URL to query indeed API
+                // var queryURL = "http://api.indeed.com/ads/apisearch?publisher=" + publisherID + "&q=" + jobTitle + "&l=" + location + "&sort=&radius=&st=&jt=&start=&limit=&fromage=&filter=&latlong=1&co=us&chnl=&userip=" + userIP + "&useragent=" + userAgent;
+                var queryURL = "http://api.indeed.com/ads/apisearch?publisher=" + publisherID + "&v=2&format=json&q=" + jobTitle + "&l=" + location + "&sort=&radius=&st=&jt=&start=&limit=&fromage=&filter=&latlong=1&co=us&chnl=&userip=" + userIP + "&useragent=" + userAgent;
+                // console.log(queryURL);
+
+
+                $.ajax({
+                    type: 'GET',
+                    url: 'https://cors-anywhere.herokuapp.com/' + queryURL,
+
+                    crossOrigin: true,
+
+                    success: function (body) {
+                        // console.log(body);
+                        jobDisplay.push(body.results)
+                    },
+
+                    error: function (xhr) { // if error occured
+                        console.log(xhr);
+                        $('#loadingmodal').css('display', 'none');
+                        $('#textmodal').css('display', 'flex');
+                    },
+                    // dataType: 'html'
+                });
+
+
+            });
+
+            console.log(jobDisplay);
+
+
+        });
+
+
+    }
+
+    function getUserInfo(callback) {
+        //Get IP and location info using the IPdata API
+        $.getJSON('https://api.ipdata.co/?api-key=01bfee655168c743cabc5c0b5a38f8d26302bb7dca9cb3e5ae1cd92c',
+            function (data) {
+
+                var userObj = {
+                    country: data.country_name,
+                    state: data.region_code,
+                    city: data.city,
+                    ip: data.ip
+                };
+                callback(userObj);
+            })
+    }
+
+
+    queryIndeed(jobTitles);
+
+
+
+    //indeed Job - END
 
 
     function indexOfMax(arr) {
